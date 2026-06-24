@@ -11,7 +11,6 @@ class Solution {
             int currentArea = width * minHeight;
             maxArea = Math.max(maxArea, currentArea);
 
-            // Move the pointer pointing to the shorter line
             if (height[left] < height[right]) {
                 left++;
             } else {
