@@ -13,10 +13,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0283-move-zeroes](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0283-move-zeroes) |
 | [0485-max-consecutive-ones](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0485-max-consecutive-ones) |
+| [0904-fruit-into-baskets](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0904-fruit-into-baskets) |
 ## Hash Table
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0001-two-sum) |
+| [0904-fruit-into-baskets](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0904-fruit-into-baskets) |
 ## Two Pointers
 |  |
 | ------- |
@@ -49,4 +51,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0042-trapping-rain-water](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0042-trapping-rain-water) |
+## Sliding Window
+|  |
+| ------- |
+| [0904-fruit-into-baskets](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0904-fruit-into-baskets) |
 <!---LeetCode Topics End-->
