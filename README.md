@@ -18,12 +18,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0560-subarray-sum-equals-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0560-subarray-sum-equals-k) |
 | [0724-find-pivot-index](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0724-find-pivot-index) |
 | [0904-fruit-into-baskets](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0904-fruit-into-baskets) |
+| [0974-subarray-sums-divisible-by-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0974-subarray-sums-divisible-by-k) |
 ## Hash Table
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0001-two-sum) |
 | [0560-subarray-sum-equals-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0560-subarray-sum-equals-k) |
 | [0904-fruit-into-baskets](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0904-fruit-into-baskets) |
+| [0974-subarray-sums-divisible-by-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0974-subarray-sums-divisible-by-k) |
 ## Two Pointers
 |  |
 | ------- |
@@ -79,4 +81,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0238-product-of-array-except-self](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0238-product-of-array-except-self) |
 | [0560-subarray-sum-equals-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0560-subarray-sum-equals-k) |
 | [0724-find-pivot-index](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0724-find-pivot-index) |
+| [0974-subarray-sums-divisible-by-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0974-subarray-sums-divisible-by-k) |
 <!---LeetCode Topics End-->
