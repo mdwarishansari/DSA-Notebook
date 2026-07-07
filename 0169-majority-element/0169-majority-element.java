@@ -1,15 +1,34 @@
 class Solution {
     public int majorityElement(int[] nums) {
 
-        HashMap<Integer, Integer> map = new HashMap<>();
+        // Stores the current majority candidate
+        int candidate = 0;
 
+        // Vote count for the candidate
+        int count = 0;
+
+        // Traverse the array
         for (int num : nums) {
-            map.put(num, map.getOrDefault(num, 0) + 1);
 
-            if (map.get(num) > nums.length / 2)
-                return num;
+            // If no candidate currently has votes,
+            // choose the current number as candidate.
+            if (count == 0) {
+                candidate = num;
+            }
+
+            // Same as candidate -> gain one vote
+            if (num == candidate) {
+                count++;
+            }
+            // Different -> lose one vote
+            else {
+                count--;
+            }
         }
 
-        return -1;
+        // Since the problem guarantees that
+        // a majority element always exists,
+        // the candidate is the answer.
+        return candidate;
     }
 }
