@@ -100,6 +100,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0084-largest-rectangle-in-histogram](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0084-largest-rectangle-in-histogram) |
 | [0496-next-greater-element-i](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0496-next-greater-element-i) |
 | [0739-daily-temperatures](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0739-daily-temperatures) |
+| [0856-score-of-parentheses](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0856-score-of-parentheses) |
 | [0901-online-stock-span](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0901-online-stock-span) |
 ## Monotonic Stack
 |  |
@@ -160,6 +161,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0438-find-all-anagrams-in-a-string](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0567-permutation-in-string](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0567-permutation-in-string) |
 | [0680-valid-palindrome-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0680-valid-palindrome-ii) |
+| [0856-score-of-parentheses](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0856-score-of-parentheses) |
 ## Counting
 |  |
 | ------- |
