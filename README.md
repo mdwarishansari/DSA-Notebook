@@ -59,6 +59,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0042-trapping-rain-water](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0042-trapping-rain-water) |
 | [0125-valid-palindrome](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0125-valid-palindrome) |
 | [0141-linked-list-cycle](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0141-linked-list-cycle) |
+| [0148-sort-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0148-sort-list) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0234-palindrome-linked-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0234-palindrome-linked-list) |
 | [0283-move-zeroes](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0283-move-zeroes) |
@@ -87,6 +88,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0015-3sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0015-3sum) |
+| [0148-sort-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0148-sort-list) |
 | [0169-majority-element](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0169-majority-element) |
 | [0347-top-k-frequent-elements](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0347-top-k-frequent-elements) |
 | [0621-task-scheduler](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0621-task-scheduler) |
@@ -157,6 +159,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0053-maximum-subarray](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0053-maximum-subarray) |
+| [0148-sort-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0148-sort-list) |
 | [0169-majority-element](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0169-majority-element) |
 | [0347-top-k-frequent-elements](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0347-top-k-frequent-elements) |
 | [0918-maximum-sum-circular-subarray](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0918-maximum-sum-circular-subarray) |
@@ -209,6 +212,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0021-merge-two-sorted-lists](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0021-merge-two-sorted-lists) |
 | [0092-reverse-linked-list-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0092-reverse-linked-list-ii) |
 | [0141-linked-list-cycle](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0141-linked-list-cycle) |
+| [0148-sort-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0148-sort-list) |
 | [0206-reverse-linked-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0206-reverse-linked-list) |
 | [0234-palindrome-linked-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0234-palindrome-linked-list) |
 | [0876-middle-of-the-linked-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0876-middle-of-the-linked-list) |
@@ -218,4 +222,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0021-merge-two-sorted-lists](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0021-merge-two-sorted-lists) |
 | [0206-reverse-linked-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0206-reverse-linked-list) |
 | [0234-palindrome-linked-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0234-palindrome-linked-list) |
+## Merge Sort
+|  |
+| ------- |
+| [0148-sort-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0148-sort-list) |
 <!---LeetCode Topics End-->
