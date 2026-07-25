@@ -59,6 +59,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0042-trapping-rain-water](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0042-trapping-rain-water) |
 | [0125-valid-palindrome](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0125-valid-palindrome) |
 | [0141-linked-list-cycle](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0141-linked-list-cycle) |
+| [0143-reorder-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0143-reorder-list) |
 | [0148-sort-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0148-sort-list) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0234-palindrome-linked-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0234-palindrome-linked-list) |
@@ -107,6 +108,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0032-longest-valid-parentheses](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0032-longest-valid-parentheses) |
 | [0042-trapping-rain-water](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0042-trapping-rain-water) |
 | [0084-largest-rectangle-in-histogram](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0084-largest-rectangle-in-histogram) |
+| [0143-reorder-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0143-reorder-list) |
 | [0155-min-stack](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0155-min-stack) |
 | [0232-implement-queue-using-stacks](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0232-implement-queue-using-stacks) |
 | [0234-palindrome-linked-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0234-palindrome-linked-list) |
@@ -212,6 +214,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0021-merge-two-sorted-lists](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0021-merge-two-sorted-lists) |
 | [0092-reverse-linked-list-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0092-reverse-linked-list-ii) |
 | [0141-linked-list-cycle](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0141-linked-list-cycle) |
+| [0143-reorder-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0143-reorder-list) |
 | [0148-sort-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0148-sort-list) |
 | [0206-reverse-linked-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0206-reverse-linked-list) |
 | [0234-palindrome-linked-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0234-palindrome-linked-list) |
@@ -220,6 +223,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0021-merge-two-sorted-lists](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0021-merge-two-sorted-lists) |
+| [0143-reorder-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0143-reorder-list) |
 | [0206-reverse-linked-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0206-reverse-linked-list) |
 | [0234-palindrome-linked-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0234-palindrome-linked-list) |
 ## Merge Sort
