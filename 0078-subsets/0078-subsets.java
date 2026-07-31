@@ -2,55 +2,62 @@ import java.util.*;
 
 class Solution {
 
-    public List<List<Integer>> subsets(int[] nums) {
-
-        // Final answer list
-        List<List<Integer>> ans = new ArrayList<>();
-
-        // Start recursion from index 0 with an empty subset
-        helper(0, nums, new ArrayList<>(), ans);
-
-        return ans;
-    }
+    // This list stores ALL the subsets.
+    List<List<Integer>> result = new ArrayList<>();
 
     /*
-     * index   -> Current position in the array
-     * nums    -> Input array
-     * current -> Current subset being built
-     * ans     -> Stores all subsets
+     * index   -> Current element we are deciding on.
+     * nums    -> Original input array.
+     * current -> Subset we are currently building.
      */
-    private void helper(int index,
-                        int[] nums,
-                        List<Integer> current,
-                        List<List<Integer>> ans) {
+    private void solve(int index, int[] nums, List<Integer> current) {
 
-        // Store a COPY of the current subset.
-        // We must create a new list because 'current'
-        // will keep changing during backtracking.
-        ans.add(new ArrayList<>(current));
+        // ===========================
+        // BASE CASE
+        // ===========================
+        // If we have processed every element,
+        // then the current subset is complete.
+        if (index == nums.length) {
 
-        // Try every remaining element
-        for (int i = index; i < nums.length; i++) {
+            // Store a COPY of the current subset.
+            result.add(new ArrayList<>(current));
 
-            // -----------------------------
-            // CHOOSE
-            // Include nums[i] in the subset
-            // -----------------------------
-            current.add(nums[i]);
-
-            // ----------------------------------------
-            // EXPLORE
-            // Move to the next index because
-            // each element can be used only once
-            // ----------------------------------------
-            helper(i + 1, nums, current, ans);
-
-            // -----------------------------
-            // BACKTRACK
-            // Remove the last chosen element
-            // so we can try another choice
-            // -----------------------------
-            current.remove(current.size() - 1);
+            return;
         }
+
+        // ==================================================
+        // CHOICE 1 : TAKE the current element
+        // ==================================================
+
+        // Include nums[index] in our subset.
+        current.add(nums[index]);
+
+        // Move to the next element.
+        solve(index + 1, nums, current);
+
+        // ==================================================
+        // BACKTRACK
+        // ==================================================
+        // Remove the last element so that
+        // we can try the "Don't Take" choice.
+        current.remove(current.size() - 1);
+
+        // ==================================================
+        // CHOICE 2 : DON'T TAKE the current element
+        // ==================================================
+
+        // Move to the next element WITHOUT adding it.
+        solve(index + 1, nums, current);
+    }
+
+    public List<List<Integer>> subsets(int[] nums) {
+
+        // Empty subset at the beginning.
+        List<Integer> current = new ArrayList<>();
+
+        // Start recursion from index 0.
+        solve(0, nums, current);
+
+        return result;
     }
 }
