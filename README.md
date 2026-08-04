@@ -189,6 +189,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0032-longest-valid-parentheses](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0032-longest-valid-parentheses) |
 | [0076-minimum-window-substring](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0076-minimum-window-substring) |
 | [0125-valid-palindrome](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0125-valid-palindrome) |
+| [0297-serialize-and-deserialize-binary-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0344-reverse-string](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0344-reverse-string) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0567-permutation-in-string](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0567-permutation-in-string) |
@@ -217,6 +218,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0155-min-stack](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0155-min-stack) |
 | [0232-implement-queue-using-stacks](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0232-implement-queue-using-stacks) |
+| [0297-serialize-and-deserialize-binary-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0901-online-stock-span](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0901-online-stock-span) |
 ## Data Stream
 |  |
@@ -274,6 +276,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0145-binary-tree-postorder-traversal](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0145-binary-tree-postorder-traversal) |
 | [0199-binary-tree-right-side-view](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0199-binary-tree-right-side-view) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
+| [0297-serialize-and-deserialize-binary-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0543-diameter-of-binary-tree) |
 ## Depth-First Search
 |  |
@@ -287,6 +290,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0145-binary-tree-postorder-traversal](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0145-binary-tree-postorder-traversal) |
 | [0199-binary-tree-right-side-view](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0199-binary-tree-right-side-view) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
+| [0297-serialize-and-deserialize-binary-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0543-diameter-of-binary-tree) |
 ## Binary Tree
 |  |
@@ -302,6 +306,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0145-binary-tree-postorder-traversal](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0145-binary-tree-postorder-traversal) |
 | [0199-binary-tree-right-side-view](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0199-binary-tree-right-side-view) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
+| [0297-serialize-and-deserialize-binary-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0543-diameter-of-binary-tree) |
 ## Breadth-First Search
 |  |
@@ -311,6 +316,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0104-maximum-depth-of-binary-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0112-path-sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0112-path-sum) |
 | [0199-binary-tree-right-side-view](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0199-binary-tree-right-side-view) |
+| [0297-serialize-and-deserialize-binary-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0297-serialize-and-deserialize-binary-tree) |
 ## Binary Lifting
 |  |
 | ------- |
