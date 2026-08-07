@@ -1,73 +1,72 @@
 import java.util.*;
 
 class Solution {
+
     public int[] topKFrequent(int[] nums, int k) {
 
-        // HashMap to store:
-        // Key   -> Number
-        // Value -> Frequency of that number
+        // ---------------- Step 1 ----------------
+        // Count the frequency of every number
         HashMap<Integer, Integer> map = new HashMap<>();
 
-        // Count the frequency of every number
         for (int num : nums) {
 
-            // If number already exists, increase frequency by 1
-            // Otherwise insert it with frequency = 1
+            // Increase frequency by 1
             map.put(num, map.getOrDefault(num, 0) + 1);
         }
 
         /*
-            Example:
+            Example
 
             nums = [1,1,1,2,2,3]
 
             map =
             {
-                1 = 3,
-                2 = 2,
-                3 = 1
+                1 -> 3
+                2 -> 2
+                3 -> 1
             }
         */
 
 
-        // Convert HashMap into a List of Map Entries
-        // Each entry contains (Key, Value)
-        List<Map.Entry<Integer, Integer>> list =
-                new ArrayList<>(map.entrySet());
-
-        /*
-            List before sorting
-
-            (1,3)
-            (2,2)
-            (3,1)
-        */
-
-
-        // Sort the list based on frequency (Value)
-        // Descending Order (Highest frequency first)
-        list.sort((a, b) -> b.getValue() - a.getValue());
-
-        /*
-            After sorting
-
-            (1,3)
-            (2,2)
-            (3,1)
-        */
+        // ---------------- Step 2 ----------------
+        // Min Heap based on frequency
+        //
+        // Each element in heap is a Map Entry
+        // (Number, Frequency)
+        //
+        // Smaller frequency comes first.
+        PriorityQueue<Map.Entry<Integer, Integer>> minHeap =
+                new PriorityQueue<>(
+                        (a, b) -> a.getValue() - b.getValue()
+                );
 
 
-        // Create answer array of size k
-        int[] ans = new int[k];
+        // Process every (Number, Frequency) pair
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
 
-        // Pick first k elements
-        for (int i = 0; i < k; i++) {
+            // Add current pair into heap
+            minHeap.offer(entry);
 
-            // getKey() returns the actual number
-            ans[i] = list.get(i).getKey();
+            // If heap size becomes greater than k,
+            // remove the least frequent element.
+            if (minHeap.size() > k) {
+                minHeap.poll();
+            }
         }
 
-        // Return answer
+
+        // ---------------- Step 3 ----------------
+        // Heap now contains exactly k most frequent elements
+
+        int[] ans = new int[k];
+
+        // Remove elements from heap
+        for (int i = k - 1; i >= 0; i--) {
+
+            // getKey() gives the original number
+            ans[i] = minHeap.poll().getKey();
+        }
+
         return ans;
     }
 }
