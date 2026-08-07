@@ -158,6 +158,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Heap (Priority Queue)
 |  |
 | ------- |
+| [0023-merge-k-sorted-lists](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0023-merge-k-sorted-lists) |
 | [0215-kth-largest-element-in-an-array](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0215-kth-largest-element-in-an-array) |
 | [0239-sliding-window-maximum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0239-sliding-window-maximum) |
 | [0347-top-k-frequent-elements](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0347-top-k-frequent-elements) |
@@ -177,6 +178,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Divide and Conquer
 |  |
 | ------- |
+| [0023-merge-k-sorted-lists](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0023-merge-k-sorted-lists) |
 | [0053-maximum-subarray](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0053-maximum-subarray) |
 | [0148-sort-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0148-sort-list) |
 | [0169-majority-element](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0169-majority-element) |
@@ -234,6 +236,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0021-merge-two-sorted-lists](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0021-merge-two-sorted-lists) |
+| [0023-merge-k-sorted-lists](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0023-merge-k-sorted-lists) |
 | [0092-reverse-linked-list-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0092-reverse-linked-list-ii) |
 | [0138-copy-list-with-random-pointer](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0138-copy-list-with-random-pointer) |
 | [0141-linked-list-cycle](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0141-linked-list-cycle) |
@@ -254,6 +257,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Merge Sort
 |  |
 | ------- |
+| [0023-merge-k-sorted-lists](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0023-merge-k-sorted-lists) |
 | [0148-sort-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0148-sort-list) |
 ## Backtracking
 |  |
@@ -354,4 +358,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0450-delete-node-in-a-bst](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0450-delete-node-in-a-bst) |
 | [0700-search-in-a-binary-search-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0700-search-in-a-binary-search-tree) |
 | [0701-insert-into-a-binary-search-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0701-insert-into-a-binary-search-tree) |
+## Tournament Sort
+|  |
+| ------- |
+| [0023-merge-k-sorted-lists](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0023-merge-k-sorted-lists) |
 <!---LeetCode Topics End-->
