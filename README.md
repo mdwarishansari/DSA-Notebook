@@ -74,6 +74,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0234-palindrome-linked-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0234-palindrome-linked-list) |
 | [0283-move-zeroes](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0283-move-zeroes) |
+| [0295-find-median-from-data-stream](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0295-find-median-from-data-stream) |
 | [0344-reverse-string](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0344-reverse-string) |
 | [0567-permutation-in-string](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0567-permutation-in-string) |
 | [0680-valid-palindrome-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0680-valid-palindrome-ii) |
@@ -102,6 +103,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0148-sort-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0148-sort-list) |
 | [0169-majority-element](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0169-majority-element) |
 | [0215-kth-largest-element-in-an-array](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0215-kth-largest-element-in-an-array) |
+| [0295-find-median-from-data-stream](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0295-find-median-from-data-stream) |
 | [0347-top-k-frequent-elements](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0347-top-k-frequent-elements) |
 | [0621-task-scheduler](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0621-task-scheduler) |
 ## Dynamic Programming
@@ -161,6 +163,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0023-merge-k-sorted-lists](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0023-merge-k-sorted-lists) |
 | [0215-kth-largest-element-in-an-array](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0215-kth-largest-element-in-an-array) |
 | [0239-sliding-window-maximum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0239-sliding-window-maximum) |
+| [0295-find-median-from-data-stream](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0295-find-median-from-data-stream) |
 | [0347-top-k-frequent-elements](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0347-top-k-frequent-elements) |
 | [0621-task-scheduler](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0621-task-scheduler) |
 ## Monotonic Queue
@@ -225,11 +228,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0155-min-stack](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0155-min-stack) |
 | [0232-implement-queue-using-stacks](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0232-implement-queue-using-stacks) |
+| [0295-find-median-from-data-stream](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0295-find-median-from-data-stream) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0901-online-stock-span](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0901-online-stock-span) |
 ## Data Stream
 |  |
 | ------- |
+| [0295-find-median-from-data-stream](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0295-find-median-from-data-stream) |
 | [0901-online-stock-span](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0901-online-stock-span) |
 ## Linked List
 |  |
