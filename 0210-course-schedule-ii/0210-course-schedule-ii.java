@@ -7,89 +7,110 @@ class Solution {
         // graph[i] contains all courses that depend on course i.
         List<List<Integer>> graph = new ArrayList<>();
 
-        // Create an empty list for every course.
+        // Create an empty adjacency list for every course.
         for (int i = 0; i < numCourses; i++) {
             graph.add(new ArrayList<>());
         }
 
-        // indegree[i] = number of prerequisites required by course i.
-        int[] indegree = new int[numCourses];
-
-        // Build the graph and calculate indegrees.
+        // Build the directed graph.
         for (int[] pair : prerequisites) {
 
             // pair[0] = course we want to take.
             int course = pair[0];
 
-            // pair[1] = course that must be completed first.
+            // pair[1] = prerequisite course.
             int prerequisite = pair[1];
 
-            // Create the dependency:
+            // Create dependency:
             // prerequisite -> course
             graph.get(prerequisite).add(course);
-
-            // course has one more prerequisite.
-            indegree[course]++;
         }
 
-        // Queue contains courses that currently have
-        // no remaining prerequisites.
-        Queue<Integer> queue = new LinkedList<>();
+        /*
+         * visited[i] represents the state of course i:
+         *
+         * 0 = not visited
+         * 1 = currently being visited
+         * 2 = completely visited
+         */
+        int[] visited = new int[numCourses];
 
-        // Add all courses that can be taken immediately.
+        // Stores the courses in DFS finishing order.
+        List<Integer> result = new ArrayList<>();
+
+        // Run DFS from every course.
         for (int course = 0; course < numCourses; course++) {
 
-            if (indegree[course] == 0) {
-                queue.offer(course);
+            // If a cycle is found, no valid ordering exists.
+            if (hasCycle(course, graph, visited, result)) {
+                return new int[0];
             }
         }
 
-        // Store the valid course ordering.
-        int[] result = new int[numCourses];
+        // DFS gives the ordering in reverse.
+        Collections.reverse(result);
 
-        // Keeps track of where to insert the next course.
-        int index = 0;
+        // Convert ArrayList<Integer> to int[].
+        int[] answer = new int[numCourses];
 
-        // Process courses using BFS.
-        while (!queue.isEmpty()) {
+        for (int i = 0; i < numCourses; i++) {
+            answer[i] = result.get(i);
+        }
 
-            // Take a course whose prerequisites are completed.
-            int currentCourse = queue.poll();
+        return answer;
+    }
 
-            // Add this course to the final ordering.
-            result[index] = currentCourse;
-            index++;
+    /*
+     * Performs DFS and returns true if a cycle is found.
+     */
+    private boolean hasCycle(
+            int currentCourse,
+            List<List<Integer>> graph,
+            int[] visited,
+            List<Integer> result) {
 
-            // Process all courses depending on currentCourse.
-            for (int nextCourse : graph.get(currentCourse)) {
+        // State 1 means this course is already in
+        // the current DFS path.
+        //
+        // Reaching it again means there is a cycle.
+        if (visited[currentCourse] == 1) {
+            return true;
+        }
 
-                // currentCourse is now completed,
-                // so one prerequisite of nextCourse is satisfied.
-                indegree[nextCourse]--;
+        // State 2 means this course has already been
+        // completely explored and no cycle was found.
+        if (visited[currentCourse] == 2) {
+            return false;
+        }
 
-                // If all prerequisites are completed,
-                // this course is now available.
-                if (indegree[nextCourse] == 0) {
-                    queue.offer(nextCourse);
-                }
+        // Mark the course as currently being explored.
+        visited[currentCourse] = 1;
+
+        // Explore every course that depends on currentCourse.
+        for (int nextCourse : graph.get(currentCourse)) {
+
+            // If a cycle exists in any neighboring path,
+            // immediately return true.
+            if (hasCycle(nextCourse, graph, visited, result)) {
+                return true;
             }
         }
 
         /*
-         * If we could not place all courses into result,
-         * some courses are stuck because of a cycle.
+         * All dependent courses have been completely explored.
          *
-         * Example:
-         * 0 -> 1
-         * 1 -> 0
-         *
-         * Neither course can become indegree 0.
+         * Mark this course as completely visited.
          */
-        if (index != numCourses) {
-            return new int[0];
-        }
+        visited[currentCourse] = 2;
 
-        // Every course was successfully ordered.
-        return result;
+        /*
+         * Add the course AFTER exploring its neighbors.
+         *
+         * This creates reverse topological order.
+         * We reverse the list later.
+         */
+        result.add(currentCourse);
+
+        return false;
     }
 }
