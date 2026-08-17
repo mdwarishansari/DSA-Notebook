@@ -176,6 +176,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0295-find-median-from-data-stream](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0295-find-median-from-data-stream) |
 | [0347-top-k-frequent-elements](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0347-top-k-frequent-elements) |
 | [0621-task-scheduler](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0621-task-scheduler) |
+| [0743-network-delay-time](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0743-network-delay-time) |
 | [0973-k-closest-points-to-origin](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0973-k-closest-points-to-origin) |
 ## Monotonic Queue
 |  |
@@ -334,6 +335,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0684-redundant-connection](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0684-redundant-connection) |
 | [0721-accounts-merge](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0721-accounts-merge) |
 | [0733-flood-fill](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0733-flood-fill) |
+| [0743-network-delay-time](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0743-network-delay-time) |
 | [0785-is-graph-bipartite](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0785-is-graph-bipartite) |
 ## Binary Tree
 |  |
@@ -372,6 +374,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0684-redundant-connection](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0684-redundant-connection) |
 | [0721-accounts-merge](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0721-accounts-merge) |
 | [0733-flood-fill](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0733-flood-fill) |
+| [0743-network-delay-time](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0743-network-delay-time) |
 | [0785-is-graph-bipartite](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0785-is-graph-bipartite) |
 | [0994-rotting-oranges](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0994-rotting-oranges) |
 ## Binary Lifting
@@ -426,6 +429,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0207-course-schedule](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0210-course-schedule-ii) |
 | [0684-redundant-connection](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0684-redundant-connection) |
+| [0743-network-delay-time](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0743-network-delay-time) |
 | [0785-is-graph-bipartite](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0785-is-graph-bipartite) |
 ## Graph Coloring
 |  |
@@ -444,4 +448,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0207-course-schedule](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0207-course-schedule) |
+## Shortest Path
+|  |
+| ------- |
+| [0743-network-delay-time](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0743-network-delay-time) |
+## Dijkstra's Algorithm
+|  |
+| ------- |
+| [0743-network-delay-time](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0743-network-delay-time) |
 <!---LeetCode Topics End-->
