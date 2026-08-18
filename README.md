@@ -332,6 +332,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0543-diameter-of-binary-tree) |
+| [0547-number-of-provinces](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0547-number-of-provinces) |
 | [0684-redundant-connection](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0684-redundant-connection) |
 | [0721-accounts-merge](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0721-accounts-merge) |
 | [0733-flood-fill](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0733-flood-fill) |
@@ -371,6 +372,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0210-course-schedule-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0210-course-schedule-ii) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0542-01-matrix](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0542-01-matrix) |
+| [0547-number-of-provinces](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0547-number-of-provinces) |
 | [0684-redundant-connection](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0684-redundant-connection) |
 | [0721-accounts-merge](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0721-accounts-merge) |
 | [0733-flood-fill](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0733-flood-fill) |
@@ -420,6 +422,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0200-number-of-islands](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0200-number-of-islands) |
+| [0547-number-of-provinces](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0547-number-of-provinces) |
 | [0684-redundant-connection](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0684-redundant-connection) |
 | [0721-accounts-merge](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0721-accounts-merge) |
 | [0785-is-graph-bipartite](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0785-is-graph-bipartite) |
@@ -428,6 +431,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0207-course-schedule](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0210-course-schedule-ii) |
+| [0547-number-of-provinces](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0547-number-of-provinces) |
 | [0684-redundant-connection](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0684-redundant-connection) |
 | [0743-network-delay-time](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0743-network-delay-time) |
 | [0785-is-graph-bipartite](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0785-is-graph-bipartite) |
