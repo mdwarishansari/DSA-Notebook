@@ -17,6 +17,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0046-permutations](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0046-permutations) |
 | [0051-n-queens](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0051-n-queens) |
 | [0053-maximum-subarray](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0053-maximum-subarray) |
+| [0056-merge-intervals](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0056-merge-intervals) |
 | [0078-subsets](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0078-subsets) |
 | [0084-largest-rectangle-in-histogram](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0084-largest-rectangle-in-histogram) |
 | [0130-surrounded-regions](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0130-surrounded-regions) |
@@ -108,6 +109,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0015-3sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0015-3sum) |
+| [0056-merge-intervals](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0056-merge-intervals) |
 | [0148-sort-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0148-sort-list) |
 | [0169-majority-element](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0169-majority-element) |
 | [0215-kth-largest-element-in-an-array](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0215-kth-largest-element-in-an-array) |
@@ -465,4 +467,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0743-network-delay-time](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0743-network-delay-time) |
+## Quicksort
+|  |
+| ------- |
+| [0056-merge-intervals](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0056-merge-intervals) |
 <!---LeetCode Topics End-->
