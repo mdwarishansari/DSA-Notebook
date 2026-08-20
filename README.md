@@ -17,6 +17,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0046-permutations](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0046-permutations) |
 | [0051-n-queens](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0051-n-queens) |
 | [0053-maximum-subarray](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0053-maximum-subarray) |
+| [0055-jump-game](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0055-jump-game) |
 | [0056-merge-intervals](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0056-merge-intervals) |
 | [0057-insert-interval](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0057-insert-interval) |
 | [0078-subsets](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0078-subsets) |
@@ -105,6 +106,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0011-container-with-most-water) |
+| [0055-jump-game](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0055-jump-game) |
 | [0435-non-overlapping-intervals](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0435-non-overlapping-intervals) |
 | [0621-task-scheduler](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0621-task-scheduler) |
 | [0680-valid-palindrome-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0680-valid-palindrome-ii) |
@@ -130,6 +132,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0032-longest-valid-parentheses](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0032-longest-valid-parentheses) |
 | [0042-trapping-rain-water](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0042-trapping-rain-water) |
 | [0053-maximum-subarray](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0053-maximum-subarray) |
+| [0055-jump-game](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0055-jump-game) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0435-non-overlapping-intervals](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0435-non-overlapping-intervals) |
 | [0542-01-matrix](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0542-01-matrix) |
