@@ -159,6 +159,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0435-non-overlapping-intervals](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0435-non-overlapping-intervals) |
 | [0542-01-matrix](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0542-01-matrix) |
 | [0918-maximum-sum-circular-subarray](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0918-maximum-sum-circular-subarray) |
+| [1143-longest-common-subsequence](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1143-longest-common-subsequence) |
 ## Stack
 |  |
 | ------- |
@@ -252,6 +253,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0680-valid-palindrome-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0680-valid-palindrome-ii) |
 | [0721-accounts-merge](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0721-accounts-merge) |
 | [0856-score-of-parentheses](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0856-score-of-parentheses) |
+| [1143-longest-common-subsequence](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1143-longest-common-subsequence) |
 ## Counting
 |  |
 | ------- |
@@ -524,4 +526,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0062-unique-paths](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0062-unique-paths) |
+## Longest Common Subsequence
+|  |
+| ------- |
+| [1143-longest-common-subsequence](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1143-longest-common-subsequence) |
 <!---LeetCode Topics End-->
