@@ -146,6 +146,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0045-jump-game-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0045-jump-game-ii) |
 | [0053-maximum-subarray](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0053-maximum-subarray) |
 | [0055-jump-game](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0055-jump-game) |
+| [0062-unique-paths](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0070-climbing-stairs) |
 | [0091-decode-ways](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0091-decode-ways) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0124-binary-tree-maximum-path-sum) |
@@ -266,6 +267,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0062-unique-paths](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0062-unique-paths) |
 | [0069-sqrtx](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0069-sqrtx) |
 | [0070-climbing-stairs](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0070-climbing-stairs) |
 | [0973-k-closest-points-to-origin](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0973-k-closest-points-to-origin) |
@@ -512,4 +514,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0322-coin-change](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0322-coin-change) |
+## Combinatorics
+|  |
+| ------- |
+| [0062-unique-paths](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0062-unique-paths) |
 <!---LeetCode Topics End-->
