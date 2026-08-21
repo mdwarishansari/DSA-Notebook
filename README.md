@@ -35,6 +35,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0238-product-of-array-except-self](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0238-product-of-array-except-self) |
 | [0239-sliding-window-maximum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0239-sliding-window-maximum) |
 | [0283-move-zeroes](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0283-move-zeroes) |
+| [0322-coin-change](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0322-coin-change) |
 | [0347-top-k-frequent-elements](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0347-top-k-frequent-elements) |
 | [0435-non-overlapping-intervals](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0435-non-overlapping-intervals) |
 | [0455-assign-cookies](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0455-assign-cookies) |
@@ -148,6 +149,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0070-climbing-stairs](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0070-climbing-stairs) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0198-house-robber](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0198-house-robber) |
+| [0322-coin-change](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0322-coin-change) |
 | [0435-non-overlapping-intervals](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0435-non-overlapping-intervals) |
 | [0542-01-matrix](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0542-01-matrix) |
 | [0918-maximum-sum-circular-subarray](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0918-maximum-sum-circular-subarray) |
@@ -399,6 +401,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0207-course-schedule](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0210-course-schedule-ii) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [0322-coin-change](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0322-coin-change) |
 | [0542-01-matrix](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0542-01-matrix) |
 | [0547-number-of-provinces](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0547-number-of-provinces) |
 | [0684-redundant-connection](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0684-redundant-connection) |
@@ -499,4 +502,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0070-climbing-stairs](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0070-climbing-stairs) |
+## Knapsack Problem
+|  |
+| ------- |
+| [0322-coin-change](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0322-coin-change) |
+## Complete Knapsack
+|  |
+| ------- |
+| [0322-coin-change](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0322-coin-change) |
 <!---LeetCode Topics End-->
