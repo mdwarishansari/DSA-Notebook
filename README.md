@@ -43,6 +43,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0435-non-overlapping-intervals](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0435-non-overlapping-intervals) |
 | [0455-assign-cookies](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0455-assign-cookies) |
 | [0485-max-consecutive-ones](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0485-max-consecutive-ones) |
+| [0494-target-sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0494-target-sum) |
 | [0496-next-greater-element-i](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0496-next-greater-element-i) |
 | [0542-01-matrix](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0542-01-matrix) |
 | [0560-subarray-sum-equals-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0560-subarray-sum-equals-k) |
@@ -160,6 +161,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0322-coin-change](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0322-coin-change) |
 | [0416-partition-equal-subset-sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0416-partition-equal-subset-sum) |
 | [0435-non-overlapping-intervals](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0435-non-overlapping-intervals) |
+| [0494-target-sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0494-target-sum) |
 | [0542-01-matrix](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0542-01-matrix) |
 | [0918-maximum-sum-circular-subarray](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0918-maximum-sum-circular-subarray) |
 | [1143-longest-common-subsequence](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1143-longest-common-subsequence) |
@@ -330,6 +332,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0046-permutations](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0046-permutations) |
 | [0051-n-queens](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0051-n-queens) |
 | [0078-subsets](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0078-subsets) |
+| [0494-target-sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0494-target-sum) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -523,6 +526,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0322-coin-change](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0322-coin-change) |
 | [0416-partition-equal-subset-sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0416-partition-equal-subset-sum) |
+| [0494-target-sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0494-target-sum) |
 ## Complete Knapsack
 |  |
 | ------- |
@@ -539,4 +543,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0416-partition-equal-subset-sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0416-partition-equal-subset-sum) |
+| [0494-target-sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0494-target-sum) |
 <!---LeetCode Topics End-->
