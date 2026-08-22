@@ -303,6 +303,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0062-unique-paths](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0062-unique-paths) |
 | [0069-sqrtx](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0069-sqrtx) |
 | [0070-climbing-stairs](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0070-climbing-stairs) |
+| [0231-power-of-two](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0231-power-of-two) |
 | [0973-k-closest-points-to-origin](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0973-k-closest-points-to-origin) |
 ## Design
 |  |
@@ -340,6 +341,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0021-merge-two-sorted-lists](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0021-merge-two-sorted-lists) |
 | [0143-reorder-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0143-reorder-list) |
 | [0206-reverse-linked-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0206-reverse-linked-list) |
+| [0231-power-of-two](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0231-power-of-two) |
 | [0234-palindrome-linked-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0234-palindrome-linked-list) |
 ## Merge Sort
 |  |
@@ -359,6 +361,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0078-subsets](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0078-subsets) |
+| [0231-power-of-two](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0231-power-of-two) |
 ## Tree
 |  |
 | ------- |
