@@ -47,6 +47,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0322-coin-change](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0322-coin-change) |
 | [0347-top-k-frequent-elements](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0347-top-k-frequent-elements) |
 | [0416-partition-equal-subset-sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0416-partition-equal-subset-sum) |
+| [0421-maximum-xor-of-two-numbers-in-an-array](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0421-maximum-xor-of-two-numbers-in-an-array) |
 | [0435-non-overlapping-intervals](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0435-non-overlapping-intervals) |
 | [0455-assign-cookies](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0455-assign-cookies) |
 | [0485-max-consecutive-ones](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0485-max-consecutive-ones) |
@@ -81,6 +82,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0169-majority-element](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0169-majority-element) |
 | [0208-implement-trie-prefix-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0208-implement-trie-prefix-tree) |
 | [0347-top-k-frequent-elements](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0347-top-k-frequent-elements) |
+| [0421-maximum-xor-of-two-numbers-in-an-array](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0421-maximum-xor-of-two-numbers-in-an-array) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0496-next-greater-element-i](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0496-next-greater-element-i) |
 | [0560-subarray-sum-equals-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0560-subarray-sum-equals-k) |
@@ -370,6 +372,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0191-number-of-1-bits](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0191-number-of-1-bits) |
 | [0231-power-of-two](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0231-power-of-two) |
 | [0260-single-number-iii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0260-single-number-iii) |
+| [0421-maximum-xor-of-two-numbers-in-an-array](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0421-maximum-xor-of-two-numbers-in-an-array) |
 ## Tree
 |  |
 | ------- |
@@ -587,6 +590,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0139-word-break](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0139-word-break) |
 | [0208-implement-trie-prefix-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0208-implement-trie-prefix-tree) |
+| [0421-maximum-xor-of-two-numbers-in-an-array](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0421-maximum-xor-of-two-numbers-in-an-array) |
 | [1268-search-suggestions-system](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1268-search-suggestions-system) |
 ## Brute-Force Search
 |  |
