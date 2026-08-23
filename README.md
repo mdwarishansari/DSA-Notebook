@@ -41,6 +41,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0215-kth-largest-element-in-an-array](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0215-kth-largest-element-in-an-array) |
 | [0238-product-of-array-except-self](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0238-product-of-array-except-self) |
 | [0239-sliding-window-maximum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0239-sliding-window-maximum) |
+| [0260-single-number-iii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0260-single-number-iii) |
 | [0283-move-zeroes](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0283-move-zeroes) |
 | [0300-longest-increasing-subsequence](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0300-longest-increasing-subsequence) |
 | [0322-coin-change](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0322-coin-change) |
@@ -368,6 +369,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0137-single-number-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0137-single-number-ii) |
 | [0191-number-of-1-bits](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0191-number-of-1-bits) |
 | [0231-power-of-two](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0231-power-of-two) |
+| [0260-single-number-iii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0260-single-number-iii) |
 ## Tree
 |  |
 | ------- |
