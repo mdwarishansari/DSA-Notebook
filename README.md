@@ -69,6 +69,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0974-subarray-sums-divisible-by-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0974-subarray-sums-divisible-by-k) |
 | [0994-rotting-oranges](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0994-rotting-oranges) |
 | [1268-search-suggestions-system](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1268-search-suggestions-system) |
+| [3718-smallest-missing-multiple-of-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3718-smallest-missing-multiple-of-k) |
 ## Hash Table
 |  |
 | ------- |
@@ -92,6 +93,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0721-accounts-merge](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0721-accounts-merge) |
 | [0904-fruit-into-baskets](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0904-fruit-into-baskets) |
 | [0974-subarray-sums-divisible-by-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0974-subarray-sums-divisible-by-k) |
+| [3718-smallest-missing-multiple-of-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3718-smallest-missing-multiple-of-k) |
 ## Two Pointers
 |  |
 | ------- |
