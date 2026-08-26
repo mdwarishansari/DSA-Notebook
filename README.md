@@ -225,6 +225,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0438-find-all-anagrams-in-a-string](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0567-permutation-in-string](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0567-permutation-in-string) |
 | [0904-fruit-into-baskets](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0904-fruit-into-baskets) |
+| [2904-shortest-and-lexicographically-smallest-beautiful-string](https://github.com/mdwarishansari/DSA-Notebook/tree/master/2904-shortest-and-lexicographically-smallest-beautiful-string) |
 ## Queue
 |  |
 | ------- |
@@ -292,6 +293,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0856-score-of-parentheses](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0856-score-of-parentheses) |
 | [1143-longest-common-subsequence](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1143-longest-common-subsequence) |
 | [1268-search-suggestions-system](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1268-search-suggestions-system) |
+| [2904-shortest-and-lexicographically-smallest-beautiful-string](https://github.com/mdwarishansari/DSA-Notebook/tree/master/2904-shortest-and-lexicographically-smallest-beautiful-string) |
 ## Counting
 |  |
 | ------- |
