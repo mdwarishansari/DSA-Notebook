@@ -69,6 +69,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0918-maximum-sum-circular-subarray](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0918-maximum-sum-circular-subarray) |
 | [0973-k-closest-points-to-origin](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0973-k-closest-points-to-origin) |
 | [0974-subarray-sums-divisible-by-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0974-subarray-sums-divisible-by-k) |
+| [0992-subarrays-with-k-different-integers](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0992-subarrays-with-k-different-integers) |
 | [0994-rotting-oranges](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0994-rotting-oranges) |
 | [1268-search-suggestions-system](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1268-search-suggestions-system) |
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/2461-maximum-sum-of-distinct-subarrays-with-length-k) |
@@ -102,6 +103,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0721-accounts-merge](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0721-accounts-merge) |
 | [0904-fruit-into-baskets](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0904-fruit-into-baskets) |
 | [0974-subarray-sums-divisible-by-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0974-subarray-sums-divisible-by-k) |
+| [0992-subarrays-with-k-different-integers](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0992-subarrays-with-k-different-integers) |
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/2461-maximum-sum-of-distinct-subarrays-with-length-k) |
 | [3568-minimum-moves-to-clean-the-classroom](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3568-minimum-moves-to-clean-the-classroom) |
 | [3718-smallest-missing-multiple-of-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3718-smallest-missing-multiple-of-k) |
@@ -242,6 +244,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0567-permutation-in-string](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0567-permutation-in-string) |
 | [0713-subarray-product-less-than-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0713-subarray-product-less-than-k) |
 | [0904-fruit-into-baskets](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0904-fruit-into-baskets) |
+| [0992-subarrays-with-k-different-integers](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0992-subarrays-with-k-different-integers) |
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/2461-maximum-sum-of-distinct-subarrays-with-length-k) |
 | [2904-shortest-and-lexicographically-smallest-beautiful-string](https://github.com/mdwarishansari/DSA-Notebook/tree/master/2904-shortest-and-lexicographically-smallest-beautiful-string) |
 ## Queue
@@ -323,6 +326,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0169-majority-element](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0169-majority-element) |
 | [0347-top-k-frequent-elements](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0347-top-k-frequent-elements) |
 | [0621-task-scheduler](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0621-task-scheduler) |
+| [0992-subarrays-with-k-different-integers](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0992-subarrays-with-k-different-integers) |
 ## Bucket Sort
 |  |
 | ------- |
