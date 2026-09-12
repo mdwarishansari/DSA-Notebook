@@ -1,37 +1,62 @@
 class Solution {
+
     public int maxSubArray(int[] nums) {
 
-        // currentSum = Maximum sum of a subarray ending at the current index
+        /*
+         * currentSum:
+         * Maximum sum of a subarray that MUST end
+         * at the current index.
+         *
+         * maxSum:
+         * Maximum subarray sum found anywhere
+         * in the array so far.
+         *
+         * We initialize both using nums[0] because
+         * the problem requires a NON-EMPTY subarray.
+         */
         int currentSum = nums[0];
-
-        // maxSum = Maximum subarray sum found so far
         int maxSum = nums[0];
 
-        // Start from index 1 because index 0 is already used to initialize both variables
+        /*
+         * Start from index 1 because index 0 was
+         * already used for initialization.
+         */
         for (int i = 1; i < nums.length; i++) {
 
             /*
-             * At every element, we have only two choices:
+             * We have two choices for the subarray
+             * ending at index i:
              *
-             * 1. Extend the previous subarray
-             *      currentSum + nums[i]
-             *
-             * 2. Start a brand new subarray from the current element
+             * 1. Start a new subarray:
              *      nums[i]
              *
-             * Whichever gives the larger sum becomes the best subarray
-             * ending at index i.
+             * 2. Extend the previous subarray:
+             *      currentSum + nums[i]
+             *
+             * Choose whichever gives the larger sum.
              */
-            currentSum = Math.max(nums[i], currentSum + nums[i]);
+            currentSum = Math.max(
+                nums[i],
+                currentSum + nums[i]
+            );
 
             /*
-             * Update the overall maximum subarray sum if the current
-             * subarray is better than any seen before.
+             * currentSum represents the best subarray
+             * ending at the current index.
+             *
+             * Compare it with the best answer found
+             * anywhere before this point.
              */
-            maxSum = Math.max(maxSum, currentSum);
+            maxSum = Math.max(
+                maxSum,
+                currentSum
+            );
         }
 
-        // Return the maximum contiguous subarray sum
+        /*
+         * maxSum now contains the maximum sum of
+         * any non-empty contiguous subarray.
+         */
         return maxSum;
     }
 }
