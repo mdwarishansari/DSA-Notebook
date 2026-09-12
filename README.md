@@ -73,6 +73,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0994-rotting-oranges](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0994-rotting-oranges) |
 | [1268-search-suggestions-system](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1268-search-suggestions-system) |
 | [1314-matrix-block-sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1314-matrix-block-sum) |
+| [1749-maximum-absolute-sum-of-any-subarray](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1749-maximum-absolute-sum-of-any-subarray) |
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/2461-maximum-sum-of-distinct-subarrays-with-length-k) |
 | [2948-make-lexicographically-smallest-array-by-swapping-elements](https://github.com/mdwarishansari/DSA-Notebook/tree/master/2948-make-lexicographically-smallest-array-by-swapping-elements) |
 | [3414-maximum-score-of-non-overlapping-intervals](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3414-maximum-score-of-non-overlapping-intervals) |
@@ -215,6 +216,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0918-maximum-sum-circular-subarray](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0918-maximum-sum-circular-subarray) |
 | [0940-distinct-subsequences-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0940-distinct-subsequences-ii) |
 | [1143-longest-common-subsequence](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1143-longest-common-subsequence) |
+| [1749-maximum-absolute-sum-of-any-subarray](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1749-maximum-absolute-sum-of-any-subarray) |
 | [3414-maximum-score-of-non-overlapping-intervals](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3414-maximum-score-of-non-overlapping-intervals) |
 ## Stack
 |  |
