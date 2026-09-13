@@ -1,72 +1,59 @@
-import java.util.HashSet;
-import java.util.Set;
-
 class Solution {
-
     public int lengthOfLongestSubstring(String s) {
 
-        // HashSet stores only UNIQUE characters
-        // It represents the current sliding window
-        Set<Character> set = new HashSet<>();
+        // Stores whether a character is currently present
+        // inside our sliding window.
+        boolean[] seen = new boolean[128];
 
-        // i = Left pointer (start of window)
-        // j = Right pointer (end of window)
-        int i = 0, j = 0;
+        // Left boundary of the sliding window.
+        int left = 0;
 
-        // Stores the maximum length found so far
-        int maxLen = 0;
+        // Stores the maximum length found so far.
+        int maxLength = 0;
 
-        // Traverse the string using the right pointer
-        while (j < s.length()) {
+        // Move the right boundary through the string.
+        for (int right = 0; right < s.length(); right++) {
 
-            // Current character at right pointer
-            char ch = s.charAt(j);
+            char current = s.charAt(right);
 
             /*
-             * If current character already exists in the window,
-             * keep removing characters from the LEFT side
-             * until the duplicate is removed.
+             * If the current character is already inside
+             * our window, the window contains a duplicate.
              *
-             * Example:
-             *
-             * Window = "abc"
-             * Next character = 'a'
-             *
-             * Remove 'a' from left
-             * Window becomes "bc"
-             *
-             * Now duplicate is gone.
+             * We cannot keep this duplicate, so we move
+             * the left boundary forward until the duplicate
+             * is removed.
              */
-            while (set.contains(ch)) {
+            while (seen[current]) {
+                char removed = s.charAt(left);
 
-                // Remove leftmost character from HashSet
-                set.remove(s.charAt(i));
+                // Remove the leftmost character from the window.
+                seen[removed] = false;
 
-                // Shrink the window
-                i++;
+                left++;
             }
 
             /*
-             * Current character is now unique,
-             * so add it to the window.
+             * The current character is now not present
+             * in the window, so we can safely add it.
              */
-            set.add(ch);
+            seen[current] = true;
 
             /*
-             * Current window:
-             * i -------- j
+             * Current window is:
              *
-             * Length = (j - i + 1)
+             *     left ........ right
              *
-             * Update maximum answer.
+             * Its length is:
+             *
+             *     right - left + 1
              */
-            maxLen = Math.max(maxLen, j - i + 1);
+            int currentLength = right - left + 1;
 
-            // Expand the window by moving right pointer
-            j++;
+            // Keep the longest valid window.
+            maxLength = Math.max(maxLength, currentLength);
         }
 
-        // Return the longest valid substring length
-        return maxLen;
+        return maxLength;
     }
 }
