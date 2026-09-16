@@ -221,6 +221,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0918-maximum-sum-circular-subarray](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0918-maximum-sum-circular-subarray) |
 | [0940-distinct-subsequences-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0940-distinct-subsequences-ii) |
 | [1143-longest-common-subsequence](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1143-longest-common-subsequence) |
+| [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
 | [1749-maximum-absolute-sum-of-any-subarray](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1749-maximum-absolute-sum-of-any-subarray) |
 | [2472-maximum-number-of-non-overlapping-palindrome-substrings](https://github.com/mdwarishansari/DSA-Notebook/tree/master/2472-maximum-number-of-non-overlapping-palindrome-substrings) |
 | [3414-maximum-score-of-non-overlapping-intervals](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3414-maximum-score-of-non-overlapping-intervals) |
@@ -298,6 +299,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0724-find-pivot-index](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0724-find-pivot-index) |
 | [0974-subarray-sums-divisible-by-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0974-subarray-sums-divisible-by-k) |
 | [1314-matrix-block-sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1314-matrix-block-sum) |
+| [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
 | [3903-smallest-stable-index-i](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3903-smallest-stable-index-i) |
 | [3904-smallest-stable-index-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3904-smallest-stable-index-ii) |
 ## Divide and Conquer
@@ -369,6 +371,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0070-climbing-stairs](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0070-climbing-stairs) |
 | [0231-power-of-two](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0231-power-of-two) |
 | [0973-k-closest-points-to-origin](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0973-k-closest-points-to-origin) |
+| [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
 | [3870-count-commas-in-range](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3870-count-commas-in-range) |
 | [3871-count-commas-in-range-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3871-count-commas-in-range-ii) |
 | [3875-construct-uniform-parity-array-i](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3875-construct-uniform-parity-array-i) |
@@ -641,6 +644,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0062-unique-paths](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0062-unique-paths) |
+| [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
 ## Longest Common Subsequence
 |  |
 | ------- |
