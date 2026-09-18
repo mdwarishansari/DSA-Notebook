@@ -24,6 +24,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0057-insert-interval](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0057-insert-interval) |
 | [0063-unique-paths-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0063-unique-paths-ii) |
 | [0064-minimum-path-sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0064-minimum-path-sum) |
+| [0075-sort-colors](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0075-sort-colors) |
 | [0078-subsets](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0078-subsets) |
 | [0084-largest-rectangle-in-histogram](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0084-largest-rectangle-in-histogram) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0121-best-time-to-buy-and-sell-stock) |
@@ -122,6 +123,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0015-3sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0015-3sum) |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0042-trapping-rain-water](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0042-trapping-rain-water) |
+| [0075-sort-colors](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0075-sort-colors) |
 | [0125-valid-palindrome](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0125-valid-palindrome) |
 | [0141-linked-list-cycle](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0142-linked-list-cycle-ii) |
@@ -177,6 +179,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0015-3sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0015-3sum) |
 | [0056-merge-intervals](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0056-merge-intervals) |
+| [0075-sort-colors](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0075-sort-colors) |
 | [0148-sort-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0148-sort-list) |
 | [0169-majority-element](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0169-majority-element) |
 | [0215-kth-largest-element-in-an-array](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0215-kth-largest-element-in-an-array) |
@@ -628,6 +631,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0056-merge-intervals](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0056-merge-intervals) |
+| [0075-sort-colors](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0075-sort-colors) |
 | [0455-assign-cookies](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0455-assign-cookies) |
 ## Memoization
 |  |
@@ -678,4 +682,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [3483-unique-3-digit-even-numbers](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3483-unique-3-digit-even-numbers) |
 | [3734-lexicographically-smallest-palindromic-permutation-greater-than-target](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3734-lexicographically-smallest-palindromic-permutation-greater-than-target) |
+## Bubble Sort
+|  |
+| ------- |
+| [0075-sort-colors](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0075-sort-colors) |
 <!---LeetCode Topics End-->
