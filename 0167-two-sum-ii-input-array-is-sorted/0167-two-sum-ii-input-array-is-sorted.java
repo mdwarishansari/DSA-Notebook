@@ -2,71 +2,41 @@ class Solution {
 
     public int[] twoSum(int[] numbers, int target) {
 
-        /*
-         * Since the array is already sorted in non-decreasing order,
-         * we can use the Two Pointer approach.
-         *
-         * left  -> starts from the beginning
-         * right -> starts from the end
-         */
-        int left = 0;
-        int right = numbers.length - 1;
+        // Left pointer starts at the first element.
+        int slow = 0;
 
-        /*
-         * Keep moving the two pointers until they meet.
-         */
-        while (left < right) {
+        // Right pointer starts at the last element.
+        int fast = numbers.length - 1;
 
-            /*
-             * Calculate the sum of the elements
-             * pointed to by left and right.
-             */
-            int sum = numbers[left] + numbers[right];
+        // Continue until the two pointers meet.
+        while (slow < fast) {
 
-            /*
-             * Case 1:
-             * We found the required pair.
-             *
-             * The problem requires 1-based indices,
-             * so we return left + 1 and right + 1.
-             */
+            // Calculate the sum of the two elements.
+            int sum = numbers[slow] + numbers[fast];
+
+            // We found the required pair.
             if (sum == target) {
-                return new int[] { left + 1, right + 1 };
+
+                // Problem requires 1-based indices,
+                // so add 1 to both Java indices.
+                return new int[]{slow + 1, fast + 1};
             }
 
-            /*
-             * Case 2:
-             * The sum is smaller than the target.
-             *
-             * Because the array is sorted, increasing 'left'
-             * will increase the sum.
-             *
-             * Therefore, move left forward.
-             */
+            // If sum is too small, we need a larger value.
+            // Since the array is sorted, move left pointer right.
             if (sum < target) {
-                left++;
+                slow++;
             }
 
-            /*
-             * Case 3:
-             * The sum is greater than the target.
-             *
-             * Because the array is sorted, decreasing 'right'
-             * will decrease the sum.
-             *
-             * Therefore, move right backward.
-             */
+            // If sum is too large, we need a smaller value.
+            // Move right pointer left.
             else {
-                right--;
+                fast--;
             }
         }
 
-        /*
-         * The problem guarantees exactly one solution,
-         * so normally this line will never execute.
-         *
-         * It is included as a fallback.
-         */
-        return new int[] { -1, -1 };
+        // The problem guarantees exactly one solution,
+        // so this line should never be reached.
+        return new int[]{-1, -1};
     }
 }
