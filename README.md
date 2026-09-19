@@ -378,6 +378,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0070-climbing-stairs](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0070-climbing-stairs) |
 | [0231-power-of-two](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0231-power-of-two) |
 | [0973-k-closest-points-to-origin](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0973-k-closest-points-to-origin) |
+| [1401-circle-and-rectangle-overlapping](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1401-circle-and-rectangle-overlapping) |
 | [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
 | [3870-count-commas-in-range](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3870-count-commas-in-range) |
 | [3871-count-commas-in-range-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3871-count-commas-in-range-ii) |
@@ -567,6 +568,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0973-k-closest-points-to-origin](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0973-k-closest-points-to-origin) |
+| [1401-circle-and-rectangle-overlapping](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1401-circle-and-rectangle-overlapping) |
 ## K-D Tree
 |  |
 | ------- |
