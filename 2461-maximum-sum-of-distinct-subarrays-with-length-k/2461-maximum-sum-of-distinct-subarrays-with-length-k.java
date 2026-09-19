@@ -5,85 +5,94 @@ class Solution {
 
     public long maximumSubarraySum(int[] nums, int k) {
 
-        // Stores the frequency of each element
-        // inside the current sliding window.
-        //
-        // Example:
-        // [9, 9, 1] -> {9=2, 1=1}
+        /*
+         * HashMap stores the frequency of each number
+         * currently present inside the sliding window.
+         *
+         * Example:
+         * window = [1, 5, 4]
+         *
+         * frequency:
+         * 1 -> 1
+         * 5 -> 1
+         * 4 -> 1
+         */
         Map<Integer, Integer> frequency = new HashMap<>();
 
-        // Sum of elements in the current window.
-        // long is used because the answer can be larger
-        // than the range of int.
+        // Left boundary of our sliding window.
+        int left = 0;
+
+        // Sum of all elements currently inside the window.
         long windowSum = 0;
 
-        // Maximum sum among all valid windows.
+        // Maximum valid subarray sum found so far.
         long maxSum = 0;
 
-        // 'right' expands the sliding window.
+        /*
+         * 'right' expands the sliding window one element at a time.
+         */
         for (int right = 0; right < nums.length; right++) {
 
-            // -------------------------------------------------
-            // STEP 1: Add the new element to the window
-            // -------------------------------------------------
-
+            // Add the new element entering the window.
             windowSum += nums[right];
 
-            // Increase the frequency of nums[right].
+            // Increase its frequency in the HashMap.
             frequency.put(
                 nums[right],
                 frequency.getOrDefault(nums[right], 0) + 1
             );
 
-            // -------------------------------------------------
-            // STEP 2: If window size becomes greater than k,
-            // remove the leftmost element.
-            // -------------------------------------------------
+            /*
+             * If the window becomes larger than k,
+             * remove elements from the left until its size
+             * becomes exactly k again.
+             */
+            if (right - left + 1 > k) {
 
-            if (right >= k) {
+                // Element that is leaving the window.
+                int removed = nums[left];
 
-                // This is the element leaving the window.
-                int leftElement = nums[right - k];
+                // Remove its value from the window sum.
+                windowSum -= removed;
 
-                // Remove its value from the running sum.
-                windowSum -= leftElement;
+                /*
+                 * Decrease the frequency of the removed element.
+                 */
+                frequency.put(
+                    removed,
+                    frequency.get(removed) - 1
+                );
 
-                // Get its current frequency.
-                int count = frequency.get(leftElement);
-
-                if (count == 1) {
-
-                    // This was the last occurrence of the
-                    // element in the window, so remove it
-                    // completely from the map.
-                    frequency.remove(leftElement);
-
-                } else {
-
-                    // Another occurrence still exists,
-                    // so only decrease its frequency.
-                    frequency.put(leftElement, count - 1);
+                /*
+                 * If its frequency becomes 0,
+                 * completely remove it from the map.
+                 */
+                if (frequency.get(removed) == 0) {
+                    frequency.remove(removed);
                 }
+
+                // Move the left pointer forward.
+                left++;
             }
 
-            // -------------------------------------------------
-            // STEP 3: Check the window
-            // -------------------------------------------------
-
             /*
-             * Once right >= k - 1, the window contains
-             * exactly k elements.
+             * Now the window has exactly k elements.
              *
-             * If frequency.size() == k, then all k elements
-             * are distinct.
+             * If frequency.size() == k, it means:
+             *
+             *     Number of elements in window = k
+             *     Number of distinct elements   = k
+             *
+             * Therefore, every element is distinct.
              */
-            if (right >= k - 1 && frequency.size() == k) {
+            if (right - left + 1 == k && frequency.size() == k) {
 
-                // Update the maximum valid window sum.
+                // Update the maximum sum.
                 maxSum = Math.max(maxSum, windowSum);
             }
         }
 
+        // If no valid subarray exists, maxSum remains 0.
         return maxSum;
     }
 }
