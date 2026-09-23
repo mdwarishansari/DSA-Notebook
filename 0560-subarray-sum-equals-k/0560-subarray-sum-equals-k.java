@@ -1,20 +1,51 @@
+import java.util.HashMap;
+
 class Solution {
+
     public int subarraySum(int[] nums, int k) {
-        int count = 0;
-        int sum = 0;
 
+        // Stores:
+        // prefixSum -> number of times it has appeared
         HashMap<Integer, Integer> map = new HashMap<>();
-        map.put(0,1);
 
-        for (int num:nums){
-            sum+= num;
+        // Important:
+        // Before processing any element, prefix sum is 0.
+        //
+        // We have seen this prefix sum once.
+        map.put(0, 1);
 
-            if (map.containsKey(sum - k)){
-                count += map.get(sum - k);
+        int prefixSum = 0;
+        int count = 0;
+
+        for (int num : nums) {
+
+            // Calculate current prefix sum
+            prefixSum += num;
+
+            // We need a previous prefix sum such that:
+            //
+            // currentPrefixSum - previousPrefixSum = k
+            //
+            // Therefore:
+            //
+            // previousPrefixSum = currentPrefixSum - k
+            int required = prefixSum - k;
+
+            // If this required prefix sum existed before,
+            // every occurrence creates one valid subarray.
+            if (map.containsKey(required)) {
+                count += map.get(required);
             }
 
-            map.put(sum, map.getOrDefault( sum , 0)+ 1);
+            // Store the current prefix sum.
+            //
+            // If it already exists, increase its frequency.
+            map.put(
+                prefixSum,
+                map.getOrDefault(prefixSum, 0) + 1
+            );
         }
+
         return count;
     }
 }
