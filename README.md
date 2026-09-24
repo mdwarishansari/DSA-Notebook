@@ -56,6 +56,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0485-max-consecutive-ones](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0485-max-consecutive-ones) |
 | [0494-target-sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0494-target-sum) |
 | [0496-next-greater-element-i](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0496-next-greater-element-i) |
+| [0523-continuous-subarray-sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0523-continuous-subarray-sum) |
 | [0542-01-matrix](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0542-01-matrix) |
 | [0560-subarray-sum-equals-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0560-subarray-sum-equals-k) |
 | [0621-task-scheduler](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0621-task-scheduler) |
@@ -107,6 +108,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0421-maximum-xor-of-two-numbers-in-an-array](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0421-maximum-xor-of-two-numbers-in-an-array) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0496-next-greater-element-i](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0496-next-greater-element-i) |
+| [0523-continuous-subarray-sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0523-continuous-subarray-sum) |
 | [0560-subarray-sum-equals-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0560-subarray-sum-equals-k) |
 | [0567-permutation-in-string](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0567-permutation-in-string) |
 | [0621-task-scheduler](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0621-task-scheduler) |
@@ -308,6 +310,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0209-minimum-size-subarray-sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0209-minimum-size-subarray-sum) |
 | [0238-product-of-array-except-self](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0238-product-of-array-except-self) |
+| [0523-continuous-subarray-sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0523-continuous-subarray-sum) |
 | [0560-subarray-sum-equals-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0560-subarray-sum-equals-k) |
 | [0713-subarray-product-less-than-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0713-subarray-product-less-than-k) |
 | [0724-find-pivot-index](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0724-find-pivot-index) |
@@ -387,6 +390,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0069-sqrtx](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0069-sqrtx) |
 | [0070-climbing-stairs](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0070-climbing-stairs) |
 | [0231-power-of-two](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0231-power-of-two) |
+| [0523-continuous-subarray-sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0523-continuous-subarray-sum) |
 | [0973-k-closest-points-to-origin](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0973-k-closest-points-to-origin) |
 | [1401-circle-and-rectangle-overlapping](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1401-circle-and-rectangle-overlapping) |
 | [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
@@ -709,4 +713,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3525-find-x-value-of-array-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3525-find-x-value-of-array-ii) |
+## Pigeonhole Principle
+|  |
+| ------- |
+| [0523-continuous-subarray-sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0523-continuous-subarray-sum) |
 <!---LeetCode Topics End-->
