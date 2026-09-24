@@ -1,31 +1,49 @@
 class Solution {
+
     public int[] productExceptSelf(int[] nums) {
-        int n= nums.length;
-        int[] ans = new int [n];
 
-        //Prefix
-        ans[0] = 1 ;
-        for ( int i =1; i<n; i++){
-            ans[i] = ans[i-1] * nums [i-1];
+        int n = nums.length;
+
+        int[] answer = new int[n];
+
+        // ------------------------------------------
+        // First pass:
+        // Store product of everything to the LEFT
+        // of each index.
+        // ------------------------------------------
+
+        int leftProduct = 1;
+
+        for (int i = 0; i < n; i++) {
+
+            // Everything before i
+            answer[i] = leftProduct;
+
+            // Include nums[i] for the next index
+            leftProduct *= nums[i];
         }
 
-        //Suffix
-        int right=1;
-        for(int i =n-1; i>=0; i--){
-            ans[i] = ans[i]*right;
-            right = right * nums[i];
+        // ------------------------------------------
+        // Second pass:
+        // Store product of everything to the RIGHT
+        // and multiply it with the left product.
+        // ------------------------------------------
+
+        int rightProduct = 1;
+
+        for (int i = n - 1; i >= 0; i--) {
+
+            // answer[i] already contains
+            // product of everything on the left.
+            //
+            // Multiply it by product of everything
+            // on the right.
+            answer[i] *= rightProduct;
+
+            // Include nums[i] for the next index
+            rightProduct *= nums[i];
         }
-        return ans;
+
+        return answer;
     }
 }
-// 1 2 3 4 nums
-// 1 1 2 6 ans
-// 0 0 0 6
-
-// | Iteration | i | Current nums[i] | right BEFORE | ans[i] = ans[i] × right | right AFTER = right × nums[i] |
-// | --------- | - | --------------- | ------------ | ----------------------- | ----------------------------- |
-// | Start     | - | -               | **1**        | -                       | -                             |
-// | 1         | 3 | 4               | **1**        | 6 × 1 = 6               | **4**                         |
-// | 2         | 2 | 3               | **4**        | 2 × 4 = 8               | **12**                        |
-// | 3         | 1 | 2               | **12**       | 1 × 12 = 12             | **24**                        |
-// | 4         | 0 | 1               | **24**       | 1 × 24 = 24             | **24** (unused after loop)    |
