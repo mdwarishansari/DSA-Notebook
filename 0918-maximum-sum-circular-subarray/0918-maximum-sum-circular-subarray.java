@@ -2,81 +2,102 @@ class Solution {
 
     public int maxSubarraySumCircular(int[] nums) {
 
-        // Stores the sum of all elements in the array.
-        int totalSum = 0;
+        // Total sum of the entire array.
+        int totalSum = nums[0];
 
-        // Kadane variables for Maximum Subarray Sum.
-        // currMax = Maximum subarray sum ending at current index.
-        // maxSum  = Maximum subarray sum found so far.
-        int currMax = 0;
+        // Variables for Maximum Kadane.
+        int maxCurrent = nums[0];
         int maxSum = nums[0];
 
-        // Kadane variables for Minimum Subarray Sum.
-        // currMin = Minimum subarray sum ending at current index.
-        // minSum  = Minimum subarray sum found so far.
-        int currMin = 0;
+        // Variables for Minimum Kadane.
+        int minCurrent = nums[0];
         int minSum = nums[0];
 
-        // Traverse the array once.
-        for (int num : nums) {
+        // Start from the second element.
+        for (int i = 1; i < nums.length; i++) {
+
+            int current = nums[i];
+
+            // Add current element to total sum.
+            totalSum += current;
 
             /*
-             * ---------- Maximum Kadane ----------
+             * -------------------------------
+             * Maximum Subarray (Kadane)
+             * -------------------------------
              *
-             * Two choices:
+             * Either:
              *
-             * 1. Extend previous maximum subarray.
-             *      currMax + num
-             *
-             * 2. Start a new subarray from current element.
-             *      num
+             * 1. Start a new subarray at current
+             * 2. Continue the previous subarray
              */
-            currMax = Math.max(currMax + num, num);
+            maxCurrent = Math.max(
+                current,
+                maxCurrent + current
+            );
 
-            // Update the best maximum subarray seen so far.
-            maxSum = Math.max(maxSum, currMax);
+            // Store the best normal subarray sum.
+            maxSum = Math.max(maxSum, maxCurrent);
 
 
             /*
-             * ---------- Minimum Kadane ----------
+             * -------------------------------
+             * Minimum Subarray (Reverse Kadane)
+             * -------------------------------
              *
-             * Same idea, but now we are searching for the
-             * smallest contiguous subarray.
+             * Either:
+             *
+             * 1. Start a new minimum subarray
+             * 2. Continue the previous minimum subarray
              */
-            currMin = Math.min(currMin + num, num);
+            minCurrent = Math.min(
+                current,
+                minCurrent + current
+            );
 
-            // Update the smallest subarray seen so far.
-            minSum = Math.min(minSum, currMin);
-
-
-            // Keep calculating the total array sum.
-            totalSum += num;
+            // Store the smallest subarray sum.
+            minSum = Math.min(minSum, minCurrent);
         }
 
+
         /*
-         * If every element is negative:
+         * If every number is negative,
+         * maxSum will also be negative.
          *
-         * totalSum == minSum
+         * totalSum - minSum would become 0,
+         * which represents an EMPTY subarray.
          *
-         * totalSum - minSum becomes 0,
-         * meaning we removed the entire array,
-         * leaving an empty subarray (which is invalid).
-         *
-         * Therefore simply return the normal Kadane answer.
+         * The problem requires a non-empty subarray,
+         * so return maxSum directly.
          */
         if (maxSum < 0) {
             return maxSum;
         }
 
+
         /*
-         * Two possible answers:
+         * -------------------------------
+         * Circular Case
+         * -------------------------------
          *
-         * 1. Normal maximum subarray.
-         * 2. Circular maximum subarray.
+         * Maximum circular sum =
          *
-         * Circular Maximum =
-         * Total Sum - Minimum Subarray Sum
+         * total array sum
+         * -
+         * minimum subarray sum
+         *
+         * We remove the "bad middle"
+         * and keep the useful beginning + ending.
          */
-        return Math.max(maxSum, totalSum - minSum);
+        int circularSum = totalSum - minSum;
+
+
+        // The answer can either:
+        //
+        // 1. Be a normal subarray
+        // 2. Be a circular subarray
+        //
+        // Take the larger one.
+        return Math.max(maxSum, circularSum);
     }
 }
