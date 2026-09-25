@@ -2,82 +2,57 @@ class Solution {
 
     public int maxAbsoluteSum(int[] nums) {
 
-        /*
-         * currentMax:
-         * Maximum subarray sum that ends at the current index.
-         *
-         * currentMin:
-         * Minimum subarray sum that ends at the current index.
-         *
-         * maxSum:
-         * Maximum subarray sum found anywhere so far.
-         *
-         * minSum:
-         * Minimum subarray sum found anywhere so far.
-         *
-         * We initialize everything to 0 because the problem allows
-         * choosing an empty subarray whose sum is 0.
-         */
-        int currentMax = 0;
-        int currentMin = 0;
+        // Maximum subarray sum ending at current index.
+        int maxCurrent = 0;
 
+        // Minimum subarray sum ending at current index.
+        int minCurrent = 0;
+
+        // Largest subarray sum found so far.
         int maxSum = 0;
+
+        // Smallest subarray sum found so far.
         int minSum = 0;
 
-        /*
-         * Process every element once.
-         */
         for (int num : nums) {
 
             /*
-             * Maximum subarray ending at this position.
+             * Kadane for maximum sum:
              *
-             * We have two choices:
-             *
-             * 1. Start a new subarray with just 'num'
-             * 2. Extend the previous maximum subarray
-             *
-             * Take whichever gives the larger sum.
+             * Either:
+             * 1. Start a new subarray with num
+             * 2. Continue the previous subarray
              */
-            currentMax = Math.max(num, currentMax + num);
+            maxCurrent = Math.max(
+                num,
+                maxCurrent + num
+            );
 
             /*
-             * Minimum subarray ending at this position.
+             * Kadane for minimum sum:
              *
-             * Again, there are two choices:
-             *
-             * 1. Start a new subarray with just 'num'
-             * 2. Extend the previous minimum subarray
-             *
-             * Take whichever gives the smaller sum.
+             * Either:
+             * 1. Start a new subarray with num
+             * 2. Continue the previous subarray
              */
-            currentMin = Math.min(num, currentMin + num);
+            minCurrent = Math.min(
+                num,
+                minCurrent + num
+            );
 
-            /*
-             * Update the best maximum subarray sum found so far.
-             */
-            maxSum = Math.max(maxSum, currentMax);
-
-            /*
-             * Update the smallest (most negative) subarray sum
-             * found so far.
-             */
-            minSum = Math.min(minSum, currentMin);
+            // Update the largest and smallest sums.
+            maxSum = Math.max(maxSum, maxCurrent);
+            minSum = Math.min(minSum, minCurrent);
         }
 
         /*
-         * The maximum absolute subarray sum can come from:
+         * The answer can come from:
          *
-         * 1. The largest positive subarray sum -> maxSum
-         * 2. The most negative subarray sum -> -minSum
+         * positive maximum → maxSum
+         * negative minimum → -minSum
          *
-         * Example:
-         *
-         * maxSum = 8
-         * minSum = -12
-         *
-         * Answer = max(8, 12) = 12
+         * Take whichever absolute value is larger.
          */
-        return Math.max(maxSum, -minSum);
+        return Math.max(maxSum, Math.abs(minSum));
     }
 }
