@@ -1,107 +1,49 @@
 import java.util.*;
 
 class Solution {
-
     public List<Integer> findAnagrams(String s, String p) {
 
-        // Stores all starting indices of valid anagrams
-        List<Integer> result = new ArrayList<>();
+        List<Integer> ans = new ArrayList<>();
 
-        // Frequency array for characters of p
-        // count[i] tells how many of that character are still needed
-        int[] count = new int[26];
-
-        // Build frequency map of pattern string
-        for (char ch : p.toCharArray()) {
-            count[ch - 'a']++;
+        // If p is longer than s, an anagram is impossible
+        if (p.length() > s.length()) {
+            return ans;
         }
 
-        // Left pointer of sliding window
-        int i = 0;
+        // Store the frequency of each character in p
+        int[] pFreq = new int[26];
 
-        // Right pointer of sliding window
-        int j = 0;
+        // Store the frequency of characters in the current window of s
+        int[] winFreq = new int[26];
 
-        // Fixed window size = length of pattern
+        // Count characters of p
+        for (char ch : p.toCharArray()) {
+            pFreq[ch - 'a']++;
+        }
+
         int k = p.length();
 
-        // Number of characters still needed to form an anagram
-        int needed = k;
+        // Sliding window over s
+        for (int i = 0; i < s.length(); i++) {
 
-        // Traverse the main string
-        while (j < s.length()) {
+            // Add the current character to the window
+            winFreq[s.charAt(i) - 'a']++;
 
-            // Current character entering the window
-            char right = s.charAt(j);
-
-            /*
-             * If this character is still needed
-             * Example:
-             * Need:
-             * a=1 b=1 c=1
-             *
-             * Current = 'a'
-             *
-             * We matched one required character
-             */
-            if (count[right - 'a'] > 0) {
-                needed--;
+            // If window size becomes greater than k,
+            // remove the character from the left side
+            if (i >= k) {
+                winFreq[s.charAt(i - k) - 'a']--;
             }
 
-            /*
-             * Decrease frequency because
-             * current character is now inside the window.
-             *
-             * Frequency may become negative,
-             * meaning extra occurrences.
-             */
-            count[right - 'a']--;
+            // When window size becomes k,
+            // check if its frequency matches p
+            if (i >= k - 1 && Arrays.equals(pFreq, winFreq)) {
 
-            /*
-             * Check only when window size becomes equal
-             * to pattern length.
-             */
-            if (j - i + 1 == k) {
-
-                /*
-                 * needed == 0 means every required character
-                 * has been matched.
-                 */
-                if (needed == 0) {
-                    result.add(i);
-                }
-
-                /*
-                 * Remove the leftmost character
-                 * because window will slide forward.
-                 */
-                char left = s.charAt(i);
-
-                /*
-                 * If count >= 0 BEFORE increment,
-                 * this character was contributing to the match.
-                 *
-                 * Removing it creates a shortage,
-                 * so increase needed.
-                 */
-                if (count[left - 'a'] >= 0) {
-                    needed++;
-                }
-
-                /*
-                 * Restore its frequency because
-                 * it is no longer inside the window.
-                 */
-                count[left - 'a']++;
-
-                // Slide window
-                i++;
+                // Starting index of the current window
+                ans.add(i - k + 1);
             }
-
-            // Expand window
-            j++;
         }
 
-        return result;
+        return ans;
     }
 }
