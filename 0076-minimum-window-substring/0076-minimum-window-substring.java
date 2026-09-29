@@ -2,111 +2,163 @@ class Solution {
 
     public String minWindow(String s, String t) {
 
-        // Impossible case
-        if (s.length() < t.length())
+        // If t is longer than s, it is impossible
+        // for s to contain all characters of t.
+        if (t.length() > s.length()) {
             return "";
-
-        // Frequency array.
-        // count[c] tells how many of character c
-        // are still needed.
-        int[] count = new int[128];
-
-        // Build frequency of pattern string.
-        for (char c : t.toCharArray()) {
-            count[c]++;
         }
 
-        // Left pointer
-        int i = 0;
+        /*
+         * need[c] = how many times character c is required
+         * according to string t.
+         *
+         * ASCII has 128 characters, which is enough here
+         * because the problem only contains English letters.
+         */
+        int[] need = new int[128];
 
-        // Right pointer
-        int j = 0;
+        for (char ch : t.toCharArray()) {
+            need[ch]++;
+        }
 
-        // Total required characters still missing.
-        int required = t.length();
+        /*
+         * required = number of DISTINCT characters that
+         * must be completely satisfied.
+         *
+         * Example:
+         * t = "AABC"
+         *
+         * required = 3
+         * because we need A, B and C.
+         */
+        int required = 0;
 
-        // Stores best answer found.
-        int minLen = Integer.MAX_VALUE;
+        for (int i = 0; i < 128; i++) {
+            if (need[i] > 0) {
+                required++;
+            }
+        }
 
-        // Starting index of best answer.
-        int start = 0;
+        /*
+         * window[c] = frequency of character c
+         * inside the current sliding window.
+         */
+        int[] window = new int[128];
 
-        // Expand window.
-        while (j < s.length()) {
+        // Number of distinct required characters currently satisfied.
+        int formed = 0;
 
-            // Character entering window.
-            char right = s.charAt(j);
+        // Left boundary of the sliding window.
+        int left = 0;
+
+        // Right boundary of the sliding window.
+        int right = 0;
+
+        /*
+         * Store the best answer found so far.
+         *
+         * bestLen = length of smallest valid window.
+         * Start with a very large value.
+         */
+        int bestLen = Integer.MAX_VALUE;
+        int bestLeft = 0;
+
+        /*
+         * Expand the window by moving right.
+         */
+        while (right < s.length()) {
+
+            // Add the current character to the window.
+            char ch = s.charAt(right);
+            window[ch]++;
 
             /*
-             * Include current character.
-             *
-             * Reduce its required frequency.
+             * If the current character has now reached
+             * exactly the frequency required by t,
+             * one more required character type is satisfied.
              *
              * Example:
-             * Need A=1
-             * After taking A
-             * Need A=0
-             */
-            count[right]--;
-
-            /*
-             * If frequency is still >=0,
-             * this character was actually needed.
+             * need['A'] = 2
              *
-             * Therefore one required character
-             * has now been matched.
+             * window['A'] becomes 2
+             * => A is now satisfied.
              */
-            if (count[right] >= 0) {
-                required--;
+            if (need[ch] > 0 && window[ch] == need[ch]) {
+                formed++;
             }
 
             /*
-             * If required becomes zero,
-             * current window contains every
-             * character of t.
+             * If all required character types are satisfied,
+             * the current window is valid.
              *
-             * Now try making window smaller.
+             * Now try to shrink it from the left to find
+             * the smallest possible valid window.
              */
-            while (required == 0) {
-
-                // Update minimum answer.
-                if (j - i + 1 < minLen) {
-                    minLen = j - i + 1;
-                    start = i;
-                }
-
-                // Left character leaving window.
-                char left = s.charAt(i);
+            while (formed == required) {
 
                 /*
-                 * Restore frequency because
-                 * character leaves window.
-                 */
-                count[left]++;
-
-                /*
-                 * If frequency becomes positive,
-                 * window now misses one required
-                 * character.
+                 * Current window is:
                  *
-                 * Window becomes invalid.
+                 * [left ... right]
+                 *
+                 * Check whether it is smaller than
+                 * our previously recorded answer.
                  */
-                if (count[left] > 0) {
-                    required++;
+                int currentLen = right - left + 1;
+
+                if (currentLen < bestLen) {
+                    bestLen = currentLen;
+                    bestLeft = left;
                 }
 
-                // Shrink window.
-                i++;
+                /*
+                 * Remove the leftmost character.
+                 */
+                char leftChar = s.charAt(left);
+                window[leftChar]--;
+
+                /*
+                 * If removing this character causes its
+                 * frequency to become smaller than required,
+                 * the window is no longer valid.
+                 *
+                 * Example:
+                 *
+                 * need['A'] = 2
+                 * window['A'] = 2
+                 *
+                 * Remove one A:
+                 *
+                 * window['A'] = 1
+                 *
+                 * Now we don't have enough A's, so
+                 * this required character is no longer satisfied.
+                 */
+                if (need[leftChar] > 0
+                        && window[leftChar] < need[leftChar]) {
+
+                    formed--;
+                }
+
+                // Move the left boundary forward.
+                left++;
             }
 
-            // Expand window.
-            j++;
+            // Expand the window from the right.
+            right++;
         }
 
-        // If no answer found.
-        if (minLen == Integer.MAX_VALUE)
+        /*
+         * If bestLen was never updated, no valid window exists.
+         */
+        if (bestLen == Integer.MAX_VALUE) {
             return "";
+        }
 
-        return s.substring(start, start + minLen);
+        /*
+         * Return the substring starting at bestLeft
+         * having length bestLen.
+         */
+        return s.substring(bestLeft, bestLeft + bestLen);
     }
 }
