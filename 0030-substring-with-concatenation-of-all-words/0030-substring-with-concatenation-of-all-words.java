@@ -6,197 +6,208 @@ class Solution {
 
         List<Integer> result = new ArrayList<>();
 
-        // Basic validation.
-        if (s == null || words == null || words.length == 0) {
-            return result;
-        }
-
-        int wordLength = words[0].length();
-        int totalWords = words.length;
-
-        // Total length that a valid concatenated substring must have.
-        int totalLength = wordLength * totalWords;
-
-        // If the required substring is longer than s,
-        // no answer is possible.
-        if (totalLength > s.length()) {
+        // Basic safety check.
+        if (s.length() == 0 || words.length == 0) {
             return result;
         }
 
         /*
-         * required stores how many times each word
-         * must appear.
+         * All words have the same length.
+         */
+        int wordLen = words[0].length();
+
+        /*
+         * Total number of words that must be present
+         * in a valid substring.
+         */
+        int wordCount = words.length;
+
+        /*
+         * Total length of a valid concatenated substring.
+         *
+         * Example:
+         *
+         * words = ["foo", "bar"]
+         * wordLen = 3
+         * wordCount = 2
+         *
+         * totalLen = 6
+         */
+        int totalLen = wordLen * wordCount;
+
+        /*
+         * If the required concatenated length is greater
+         * than the entire string, no answer is possible.
+         */
+        if (totalLen > s.length()) {
+            return result;
+        }
+
+        /*
+         * need stores the required frequency of every word.
          *
          * Example:
          *
          * words = ["foo", "bar", "foo"]
          *
-         * required:
+         * need:
          * foo -> 2
          * bar -> 1
          */
-        Map<String, Integer> required = new HashMap<>();
+        Map<String, Integer> need = new HashMap<>();
 
         for (String word : words) {
-            required.put(
-                word,
-                required.getOrDefault(word, 0) + 1
-            );
+            need.put(word, need.getOrDefault(word, 0) + 1);
         }
 
         /*
-         * Because every word has the same length, we need to
-         * consider different starting offsets.
+         * We need to check different starting offsets.
          *
-         * Example if wordLength = 3:
+         * If wordLen = 3, offsets are:
          *
-         * offset 0:
-         * 0, 3, 6, 9, ...
+         * 0, 1, 2
          *
-         * offset 1:
-         * 1, 4, 7, 10, ...
-         *
-         * offset 2:
-         * 2, 5, 8, 11, ...
-         *
-         * This guarantees that we examine every possible
-         * word-aligned substring.
+         * This ensures that we consider every possible
+         * word-aligned starting position.
          */
-        for (int offset = 0; offset < wordLength; offset++) {
+        for (int offset = 0; offset < wordLen; offset++) {
 
+            // Left boundary of the sliding window.
             int left = offset;
+
+            // Right boundary of the sliding window.
             int right = offset;
 
             /*
-             * window stores the frequency of words currently
-             * inside our sliding window.
-             */
-            Map<String, Integer> window = new HashMap<>();
-
-            /*
-             * count = number of complete words currently
-             * inside the sliding window.
+             * Number of complete words currently inside
+             * the sliding window.
              */
             int count = 0;
 
             /*
-             * Move right by one complete word at a time.
+             * Stores the frequency of words currently
+             * present inside our sliding window.
              */
-            while (right + wordLength <= s.length()) {
+            Map<String, Integer> window = new HashMap<>();
+
+            /*
+             * Take one complete word at a time.
+             *
+             * right + wordLen must stay inside s.
+             */
+            while (right + wordLen <= s.length()) {
 
                 /*
-                 * Extract the next word-sized chunk.
+                 * Extract exactly one word-sized chunk.
                  */
-                String currentWord =
-                    s.substring(right, right + wordLength);
+                String word = s.substring(right, right + wordLen);
 
-                right += wordLength;
+                // Move right by one complete word.
+                right += wordLen;
 
                 /*
-                 * Case 1:
+                 * CASE 1:
                  *
-                 * currentWord does not exist in words.
+                 * This word does not exist in 'need'.
                  *
-                 * Therefore, no valid concatenation can cross
-                 * this word.
+                 * Therefore, the current window can never
+                 * form a valid concatenation.
                  *
-                 * Start a completely new window after it.
+                 * Start a completely new window.
                  */
-                if (!required.containsKey(currentWord)) {
+                if (!need.containsKey(word)) {
 
                     window.clear();
+
                     count = 0;
+
+                    // Start after this invalid word.
                     left = right;
 
                     continue;
                 }
 
                 /*
-                 * Case 2:
+                 * CASE 2:
                  *
-                 * currentWord is required.
+                 * The word is required.
                  *
-                 * Add it to the current window.
+                 * Add it to our current window.
                  */
                 window.put(
-                    currentWord,
-                    window.getOrDefault(currentWord, 0) + 1
+                    word,
+                    window.getOrDefault(word, 0) + 1
                 );
 
                 count++;
 
                 /*
-                 * If currentWord appears more times than allowed,
+                 * If this word occurs more times than allowed,
                  * shrink the window from the left.
                  *
                  * Example:
                  *
-                 * required:
+                 * need:
                  * foo -> 1
                  *
                  * window:
                  * foo -> 2
                  *
                  * We must remove words from the left until
-                 * foo appears only once.
+                 * foo's frequency becomes valid again.
                  */
-                while (window.get(currentWord)
-                       > required.get(currentWord)) {
+                while (window.get(word) > need.get(word)) {
 
-                    /*
-                     * Get the leftmost word.
-                     */
+                    // Get the leftmost word.
                     String leftWord =
-                        s.substring(left, left + wordLength);
+                        s.substring(left, left + wordLen);
 
-                    /*
-                     * Remove it from the window.
-                     */
+                    // Remove one occurrence of that word.
                     window.put(
                         leftWord,
                         window.get(leftWord) - 1
                     );
 
-                    count--;
+                    // Move left by one complete word.
+                    left += wordLen;
 
-                    /*
-                     * Move left by one complete word.
-                     */
-                    left += wordLength;
+                    // One word has been removed from the window.
+                    count--;
                 }
 
                 /*
-                 * If we currently have exactly the same number
-                 * of words as required, then:
+                 * CASE 3:
                  *
-                 * 1. Every word belongs to words.
-                 * 2. No word occurs more than allowed.
-                 * 3. Number of words is exactly words.length.
-                 *
-                 * Therefore this is a valid answer.
+                 * If the number of words in the current
+                 * window equals the number of words required,
+                 * then every required word appears with the
+                 * correct frequency.
                  */
-                if (count == totalWords) {
+                if (count == wordCount) {
 
+                    /*
+                     * The current window starts at 'left',
+                     * so 'left' is a valid starting index.
+                     */
                     result.add(left);
 
                     /*
-                     * Continue searching for another overlapping
-                     * valid window.
+                     * We continue searching for overlapping
+                     * answers.
                      *
-                     * Remove the leftmost word and move left
-                     * forward by one word.
+                     * Remove the leftmost word and continue
+                     * expanding the window.
                      */
                     String leftWord =
-                        s.substring(left, left + wordLength);
+                        s.substring(left, left + wordLen);
 
                     window.put(
                         leftWord,
                         window.get(leftWord) - 1
                     );
 
+                    left += wordLen;
                     count--;
-
-                    left += wordLength;
                 }
             }
         }
