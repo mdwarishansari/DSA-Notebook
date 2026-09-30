@@ -1,55 +1,46 @@
 class Solution {
+
     public int mySqrt(int x) {
 
-        // Special case:
-        // Square root of 0 is 0.
-        if (x == 0)
-            return 0;
+        // 0 and 1 are their own square roots
+        if (x < 2) {
+            return x;
+        }
 
-        // Search space is from 1 to x.
+        // Possible square root lies between 1 and x
         int left = 1;
         int right = x;
 
-        // Stores the largest valid square root found so far.
-        int ans = 0;
+        // Stores the largest valid square root found so far
+        int answer = 0;
 
-        // Continue searching while the search space is valid.
         while (left <= right) {
 
-            // Calculate middle safely to avoid integer overflow.
+            // Find middle safely
             int mid = left + (right - left) / 2;
 
-            /*
-             * Instead of checking:
-             *      mid * mid <= x
-             *
-             * we check:
-             *      mid <= x / mid
-             *
-             * This avoids integer overflow for large values of x.
-             */
+            // Use long to prevent overflow when calculating mid * mid
+            long square = (long) mid * mid;
 
-            // Case 1:
-            // mid² is less than or equal to x.
-            // This means mid is a valid answer.
-            if (mid <= x / mid) {
+            if (square == x) {
+                // Exact square root found
+                return mid;
+            }
 
-                // Store this valid answer.
-                ans = mid;
-
-                // Try to find a larger valid square root.
+            else if (square < x) {
+                // mid is a valid answer.
+                // But there may be a larger valid value.
+                answer = mid;
                 left = mid + 1;
             }
 
-            // Case 2:
-            // mid² is greater than x.
-            // mid is too large, so search in the left half.
             else {
+                // mid is too large, so search the left half
                 right = mid - 1;
             }
         }
 
-        // Return the largest integer whose square is <= x.
-        return ans;
+        // Returns floor(sqrt(x))
+        return answer;
     }
 }
