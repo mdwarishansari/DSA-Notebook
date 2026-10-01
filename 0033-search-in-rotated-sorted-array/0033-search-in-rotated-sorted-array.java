@@ -1,44 +1,49 @@
 class Solution {
+
     public int search(int[] nums, int target) {
 
-        // Start of the search range
+        // Binary search boundaries
         int left = 0;
-
-        // End of the search range
         int right = nums.length - 1;
 
-        // Continue searching while a valid search space exists
+        // Continue while there is a valid search range
         while (left <= right) {
 
             // Calculate middle index safely
             int mid = left + (right - left) / 2;
 
-            // Case 1:
-            // Target found
+            // If middle element is the target, return its index
             if (nums[mid] == target) {
                 return mid;
             }
 
-            /*
-             * One side of the array is ALWAYS sorted.
-             * First, determine which half is sorted.
-             */
 
-            // -------------------------------
-            // LEFT HALF IS SORTED
-            // -------------------------------
+            /*
+             * At least one half of the rotated array
+             * must be sorted.
+             *
+             * Check whether the LEFT half is sorted.
+             *
+             * Example:
+             *
+             * [4, 5, 6, 7, 0, 1, 2]
+             *  L        M        R
+             *
+             * nums[left] <= nums[mid]
+             */
             if (nums[left] <= nums[mid]) {
 
                 /*
-                 * Check if target lies inside
-                 * the sorted left half.
+                 * Left half is sorted.
                  *
-                 * Range:
+                 * Check whether target lies inside
+                 * this sorted range.
+                 *
                  * nums[left] <= target < nums[mid]
                  */
-                if (target >= nums[left] && target < nums[mid]) {
+                if (nums[left] <= target && target < nums[mid]) {
 
-                    // Search in the left half
+                    // Target must be in the left half
                     right = mid - 1;
 
                 } else {
@@ -46,23 +51,21 @@ class Solution {
                     // Target must be in the right half
                     left = mid + 1;
                 }
-            }
 
-            // -------------------------------
-            // RIGHT HALF IS SORTED
-            // -------------------------------
-            else {
+            } else {
 
                 /*
-                 * Check if target lies inside
+                 * Left half is not sorted,
+                 * therefore the RIGHT half is sorted.
+                 *
+                 * Check whether target lies inside
                  * the sorted right half.
                  *
-                 * Range:
                  * nums[mid] < target <= nums[right]
                  */
-                if (target > nums[mid] && target <= nums[right]) {
+                if (nums[mid] < target && target <= nums[right]) {
 
-                    // Search in the right half
+                    // Target must be in the right half
                     left = mid + 1;
 
                 } else {
@@ -73,7 +76,10 @@ class Solution {
             }
         }
 
-        // Target not found
+        /*
+         * If the loop finishes, the target does not
+         * exist in the array.
+         */
         return -1;
     }
 }
