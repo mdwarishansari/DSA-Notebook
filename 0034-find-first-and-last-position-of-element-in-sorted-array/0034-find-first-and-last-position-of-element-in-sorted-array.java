@@ -8,83 +8,96 @@ class Solution {
         // Find the last occurrence of target
         int last = findLast(nums, target);
 
-        // Return both indices
-        return new int[]{first, last};
+        return new int[] { first, last };
     }
 
-    /*
-     * Finds the FIRST (leftmost) occurrence of target.
-     */
+    // ---------------------------------------------------------
+    // Finds the FIRST occurrence of target
+    // ---------------------------------------------------------
     private int findFirst(int[] nums, int target) {
 
         int left = 0;
         int right = nums.length - 1;
 
-        // Stores the first occurrence found so far
-        int ans = -1;
+        // Stores the best answer found so far
+        int answer = -1;
 
         while (left <= right) {
 
-            // Calculate middle safely
+            // Avoids possible integer overflow
             int mid = left + (right - left) / 2;
 
-            // If target is found OR middle is greater,
-            // search in the left half.
-            if (nums[mid] >= target) {
+            if (nums[mid] == target) {
 
-                // Save answer if target is found
-                if (nums[mid] == target) {
-                    ans = mid;
-                }
+                // We found target.
+                // Store this index as a possible first position.
+                answer = mid;
 
-                // Continue searching left
+                // But there might be another target on the LEFT.
+                // So continue searching in the left half.
                 right = mid - 1;
-            }
 
-            // Target must be on the right
-            else {
+            } 
+            else if (nums[mid] < target) {
+
+                // Target is greater than nums[mid],
+                // so search on the RIGHT side.
                 left = mid + 1;
+
+            } 
+            else {
+
+                // Target is smaller than nums[mid],
+                // so search on the LEFT side.
+                right = mid - 1;
             }
         }
 
-        return ans;
+        return answer;
     }
 
-    /*
-     * Finds the LAST (rightmost) occurrence of target.
-     */
+    // ---------------------------------------------------------
+    // Finds the LAST occurrence of target
+    // ---------------------------------------------------------
     private int findLast(int[] nums, int target) {
 
         int left = 0;
         int right = nums.length - 1;
 
-        // Stores the last occurrence found so far
-        int ans = -1;
+        // Stores the best answer found so far
+        int answer = -1;
 
         while (left <= right) {
 
-            // Calculate middle safely
+            // Avoids possible integer overflow
             int mid = left + (right - left) / 2;
 
-            // If target is found OR middle is smaller,
-            // search in the right half.
-            if (nums[mid] <= target) {
+            if (nums[mid] == target) {
 
-                // Save answer if target is found
-                if (nums[mid] == target) {
-                    ans = mid;
-                }
+                // We found target.
+                // Store this index as a possible last position.
+                answer = mid;
 
-                // Continue searching right
+                // But there might be another target on the RIGHT.
+                // So continue searching in the right half.
                 left = mid + 1;
-            }
 
-            // Target must be on the left
+            } 
+            else if (nums[mid] < target) {
+
+                // Target is greater than nums[mid],
+                // so search on the RIGHT side.
+                left = mid + 1;
+
+            } 
             else {
+
+                // Target is smaller than nums[mid],
+                // so search on the LEFT side.
                 right = mid - 1;
             }
         }
 
-        return ans;
+        return answer;
     }
 }
