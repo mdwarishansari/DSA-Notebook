@@ -1,87 +1,40 @@
 class Solution {
-
-    /*
-     * Returns true if Koko can finish all banana piles
-     * within h hours while eating at 'speed' bananas/hour.
-     */
-    private boolean canEatAll(int[] piles, int speed, int h) {
-
-        // Total hours needed at the current speed
-        long hours = 0;
-
-        // Calculate hours required for each pile
-        for (int bananas : piles) {
-
-            /*
-             * Ceiling Division
-             *
-             * Instead of:
-             * Math.ceil((double) bananas / speed)
-             *
-             * We use integer arithmetic:
-             *
-             * (bananas + speed - 1) / speed
-             *
-             * Example:
-             * bananas = 11
-             * speed = 4
-             *
-             * (11 + 4 - 1) / 4
-             * = 14 / 4
-             * = 3
-             */
-            hours += (bananas + speed - 1) / speed;
-        }
-
-        // If required hours are within the limit,
-        // this speed is valid.
-        return hours <= h;
-    }
-
     public int minEatingSpeed(int[] piles, int h) {
 
-        // Minimum possible eating speed
-        int left = 1;
-
-        // Maximum possible eating speed
-        // (largest pile size)
-        int right = 0;
+        int low = 1;
+        int high = 0;
 
         // Find the maximum pile
         for (int pile : piles) {
-            right = Math.max(right, pile);
+            high = Math.max(high, pile);
         }
 
-        /*
-         * Binary Search on the Answer
-         *
-         * We want the FIRST speed that works.
-         */
-        while (left < right) {
+        // Binary search for minimum valid speed
+        while (low < high) {
 
-            // Calculate middle speed safely
-            int mid = left + (right - left) / 2;
+            int mid = low + (high - low) / 2;
 
-            // If this speed is enough,
-            // try to find a smaller valid speed.
-            if (canEatAll(piles, mid, h)) {
+            long hours = 0;
 
-                right = mid;
+            // Calculate total hours needed at speed mid
+            for (int pile : piles) {
+
+                // Ceiling division: ceil(pile / mid)
+                hours += (pile + mid - 1) / mid;
             }
 
-            // Speed is too slow.
-            // Need to increase it.
-            else {
+            if (hours <= h) {
 
-                left = mid + 1;
+                // mid works, try a smaller speed
+                high = mid;
+
+            } else {
+
+                // mid is too slow
+                low = mid + 1;
             }
         }
 
-        /*
-         * left == right
-         *
-         * This is the minimum valid speed.
-         */
-        return left;
+        return low;
     }
 }
