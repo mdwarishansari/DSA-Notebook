@@ -1,50 +1,39 @@
-import java.util.Stack;
-
 class Solution {
-
     public int longestValidParentheses(String s) {
 
-        // Stack stores indices
         Stack<Integer> stack = new Stack<>();
 
-        // Base index before starting
+        // Boundary before the string starts
         stack.push(-1);
 
-        int maxLength = 0;
+        int ans = 0;
 
-        // Traverse the string
         for (int i = 0; i < s.length(); i++) {
 
-            char ch = s.charAt(i);
+            if (s.charAt(i) == '(') {
 
-            // Opening bracket
-            if (ch == '(') {
-
-                // Store its index
+                // Store index of '('
                 stack.push(i);
 
             } else {
 
-                // Remove matching opening bracket (or base index)
+                // Try to match ')'
                 stack.pop();
 
-                // No valid opening bracket left
                 if (stack.isEmpty()) {
 
-                    // Current ')' becomes the new base
+                    // This ')' cannot be matched.
+                    // Make it the new boundary.
                     stack.push(i);
 
                 } else {
 
-                    // Calculate current valid substring length
-                    int length = i - stack.peek();
-
-                    // Update maximum length
-                    maxLength = Math.max(maxLength, length);
+                    // Length of current valid substring
+                    ans = Math.max(ans, i - stack.peek());
                 }
             }
         }
 
-        return maxLength;
+        return ans;
     }
 }
