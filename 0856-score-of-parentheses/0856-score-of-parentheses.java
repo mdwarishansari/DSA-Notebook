@@ -1,45 +1,42 @@
-import java.util.Stack;
+import java.util.*;
 
 class Solution {
-
     public int scoreOfParentheses(String s) {
 
-        // Stack stores the score before entering a new '(' group
-        Stack<Integer> stack = new Stack<>();
+        Stack<Integer> st = new Stack<>();
 
-        // Current score of the current level
-        int score = 0;
+        // Score of the outermost level
+        st.push(0);
 
-        // Traverse every character
-        for (char ch : s.toCharArray()) {
+        for (char c : s.toCharArray()) {
 
-            if (ch == '(') {
+            if (c == '(') {
 
-                // Save current score before starting a new group
-                stack.push(score);
-
-                // Reset score for the new inner group
-                score = 0;
+                // Start a new nested level
+                st.push(0);
 
             } else {
 
-                // Retrieve the score before this '('
-                int previousScore = stack.pop();
+                // Get the score inside this pair
+                int inner = st.pop();
 
-                // If score is 0, it means we found "()"
-                if (score == 0) {
-                    score = previousScore + 1;
+                int score;
+
+                // "()" directly -> score 1
+                if (inner == 0) {
+                    score = 1;
                 }
 
-                // Otherwise we found "(A)"
-                // Multiply inner score by 2 and add previous score
+                // "(A)" -> 2 * score(A)
                 else {
-                    score = previousScore + (2 * score);
+                    score = 2 * inner;
                 }
+
+                // Add this score to the parent level
+                st.push(st.pop() + score);
             }
         }
 
-        // Final calculated score
-        return score;
+        return st.peek();
     }
 }
