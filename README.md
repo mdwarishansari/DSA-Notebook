@@ -740,4 +740,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0032-longest-valid-parentheses](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0032-longest-valid-parentheses) |
+| [0856-score-of-parentheses](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0856-score-of-parentheses) |
 <!---LeetCode Topics End-->
