@@ -1,52 +1,43 @@
 import java.util.*;
 
 class Solution {
-
     public int[] nextGreaterElement(int[] nums1, int[] nums2) {
 
-        // Stores:
-        // key   -> number in nums2
-        // value -> next greater element
-        Map<Integer, Integer> nextGreater = new HashMap<>();
+        // Stack stores possible next greater elements
+        Stack<Integer> st = new Stack<>();
 
-        // Monotonic Decreasing Stack
-        // Stores numbers whose next greater element
-        // has not been found yet.
-        Stack<Integer> stack = new Stack<>();
+        // Map each number to its next greater element
+        HashMap<Integer, Integer> map = new HashMap<>();
 
-        // Traverse nums2 once
-        for (int num : nums2) {
+        // Traverse nums2 from right to left
+        for (int i = nums2.length - 1; i >= 0; i--) {
 
-            // If current number is greater than the
-            // top of the stack, then it is the next
-            // greater element for stack.peek().
-            while (!stack.isEmpty() && num > stack.peek()) {
+            int current = nums2[i];
 
-                // Remove waiting element
-                int smaller = stack.pop();
-
-                // Store its answer
-                nextGreater.put(smaller, num);
+            // Remove elements that cannot be
+            // the next greater element
+            while (!st.isEmpty() && st.peek() <= current) {
+                st.pop();
             }
 
-            // Current number now waits for its own
-            // next greater element.
-            stack.push(num);
+            // If stack is empty, no greater element exists
+            if (st.isEmpty()) {
+                map.put(current, -1);
+            } else {
+                // Top of stack is the nearest greater element
+                map.put(current, st.peek());
+            }
+
+            // Current element can be useful
+            // for elements to its left
+            st.push(current);
         }
 
-        // Any element still inside the stack
-        // has no greater element on its right.
-        while (!stack.isEmpty()) {
-            nextGreater.put(stack.pop(), -1);
-        }
-
-        // Build final answer for nums1
+        // Build answer for nums1
         int[] ans = new int[nums1.length];
 
         for (int i = 0; i < nums1.length; i++) {
-
-            // Directly fetch answer from map
-            ans[i] = nextGreater.get(nums1[i]);
+            ans[i] = map.get(nums1[i]);
         }
 
         return ans;
