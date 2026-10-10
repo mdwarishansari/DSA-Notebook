@@ -764,4 +764,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0856-score-of-parentheses](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0856-score-of-parentheses) |
 | [1021-remove-outermost-parentheses](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1021-remove-outermost-parentheses) |
 | [1541-minimum-insertions-to-balance-a-parentheses-string](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1541-minimum-insertions-to-balance-a-parentheses-string) |
+## Range Minimum/Maximum Query
+|  |
+| ------- |
+| [0084-largest-rectangle-in-histogram](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0084-largest-rectangle-in-histogram) |
 <!---LeetCode Topics End-->
