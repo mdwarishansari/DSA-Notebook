@@ -1,90 +1,49 @@
+
 import java.util.Stack;
 
 class Solution {
-
     public int largestRectangleArea(int[] heights) {
-
         int n = heights.length;
-
-        // ---------------------------------------------------------
-        // leftSmall[i] = index of nearest smaller bar on the left
-        // If no smaller exists, store -1
-        // ---------------------------------------------------------
-        int[] leftSmall = new int[n];
-
-        // ---------------------------------------------------------
-        // rightSmall[i] = index of nearest smaller bar on the right
-        // If no smaller exists, store n
-        // ---------------------------------------------------------
-        int[] rightSmall = new int[n];
-
-        Stack<Integer> stack = new Stack<>();
-
-        // =========================================================
-        // STEP 1 : Find Nearest Smaller Element on LEFT
-        // =========================================================
-        for (int i = 0; i < n; i++) {
-
-            // Remove all bars that are greater than or equal
-            // because they cannot be the nearest smaller.
-            while (!stack.isEmpty() &&
-                    heights[stack.peek()] >= heights[i]) {
-
-                stack.pop();
-            }
-
-            // If stack becomes empty,
-            // no smaller element exists on the left.
-            if (stack.isEmpty()) {
-                leftSmall[i] = -1;
-            } else {
-                leftSmall[i] = stack.peek();
-            }
-
-            // Push current index.
-            stack.push(i);
-        }
-
-        // Reuse the stack.
-        stack.clear();
-
-        // =========================================================
-        // STEP 2 : Find Nearest Smaller Element on RIGHT
-        // =========================================================
-        for (int i = n - 1; i >= 0; i--) {
-
-            while (!stack.isEmpty() &&
-                    heights[stack.peek()] >= heights[i]) {
-
-                stack.pop();
-            }
-
-            // If stack becomes empty,
-            // no smaller element exists on the right.
-            if (stack.isEmpty()) {
-                rightSmall[i] = n;
-            } else {
-                rightSmall[i] = stack.peek();
-            }
-
-            stack.push(i);
-        }
-
-        // =========================================================
-        // STEP 3 : Calculate Maximum Rectangle Area
-        // =========================================================
         int maxArea = 0;
 
-        for (int i = 0; i < n; i++) {
+        // Store indices of bars in increasing order of height.
+        Stack<Integer> stack = new Stack<>();
 
-            // Width = Right Smaller - Left Smaller - 1
-            int width = rightSmall[i] - leftSmall[i] - 1;
+        // Go one step beyond the array to process remaining bars.
+        for (int i = 0; i <= n; i++) {
 
-            // Area = Height × Width
-            int area = heights[i] * width;
+            // Treat the extra position as a bar of height 0.
+            // This forces all remaining bars to be processed.
+            int currentHeight = (i == n) ? 0 : heights[i];
 
-            // Update answer.
-            maxArea = Math.max(maxArea, area);
+            // If the current bar is shorter than the stack's top bar,
+            // the top bar's rectangle cannot extend any farther right.
+            while (!stack.isEmpty()
+                    && heights[stack.peek()] > currentHeight) {
+
+                // Remove the bar whose maximum rectangle we calculate.
+                int height = heights[stack.pop()];
+
+                // If the stack is empty, no smaller bar exists on the
+                // left, so the rectangle extends from index 0 to i - 1.
+                // Otherwise, the new stack top is the nearest smaller
+                // bar on the left.
+                int width = stack.isEmpty()
+                        ? i
+                        : i - stack.peek() - 1;
+
+                // Calculate the area using the popped bar's height.
+                int area = height * width;
+
+                // Keep track of the largest rectangle found so far.
+                maxArea = Math.max(maxArea, area);
+            }
+
+            // Do not push the virtual bar at index n.
+            // Push the current index to maintain increasing heights.
+            if (i < n) {
+                stack.push(i);
+            }
         }
 
         return maxArea;
