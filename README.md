@@ -72,6 +72,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0721-accounts-merge](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0721-accounts-merge) |
 | [0724-find-pivot-index](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0724-find-pivot-index) |
 | [0733-flood-fill](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0733-flood-fill) |
+| [0735-asteroid-collision](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0735-asteroid-collision) |
 | [0739-daily-temperatures](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0739-daily-temperatures) |
 | [0875-koko-eating-bananas](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0875-koko-eating-bananas) |
 | [0904-fruit-into-baskets](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0904-fruit-into-baskets) |
@@ -281,6 +282,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0234-palindrome-linked-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0234-palindrome-linked-list) |
 | [0496-next-greater-element-i](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0503-next-greater-element-ii) |
+| [0735-asteroid-collision](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0735-asteroid-collision) |
 | [0739-daily-temperatures](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0739-daily-temperatures) |
 | [0856-score-of-parentheses](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0856-score-of-parentheses) |
 | [0901-online-stock-span](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0901-online-stock-span) |
@@ -749,6 +751,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Simulation
 |  |
 | ------- |
+| [0735-asteroid-collision](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0735-asteroid-collision) |
 | [3498-reverse-degree-of-a-string](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3498-reverse-degree-of-a-string) |
 ## Segment Tree
 |  |
