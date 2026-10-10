@@ -1,57 +1,47 @@
+
 import java.util.Stack;
 
 class StockSpanner {
 
-    // -----------------------------------------------------------------
-    // This inner class represents one entry in our stack.
-    //
-    // price -> stock price of that day
-    // span  -> how many consecutive days this price already covers
-    // -----------------------------------------------------------------
-    class Pair {
-        int price;
-        int span;
+    // Each entry stores:
+    // [0] = stock price
+    // [1] = span of that price
+    private Stack<int[]> stack;
 
-        Pair(int price, int span) {
-            this.price = price;
-            this.span = span;
-        }
-    }
-
-    // Monotonic Decreasing Stack
-    // The prices inside the stack are always in decreasing order.
-    Stack<Pair> stack;
-
-    // Constructor
+    // Initialize an empty stack when StockSpanner is created.
     public StockSpanner() {
         stack = new Stack<>();
     }
 
+    // Process today's stock price and return its span.
     public int next(int price) {
 
-        // Every new price always counts itself.
+        // Today's price always contributes at least one day.
         int span = 1;
 
-        // ----------------------------------------------------------
-        // Remove all previous prices that are smaller than or equal
-        // to today's price.
-        //
-        // Their spans can directly be added because today's price
-        // covers all of them.
-        // ----------------------------------------------------------
-        while (!stack.isEmpty() && stack.peek().price <= price) {
+        // All previous prices less than or equal to today's price
+        // can be included in today's span.
+        while (!stack.isEmpty() && stack.peek()[0] <= price) {
 
-            // Add the span of removed element.
-            span += stack.peek().span;
+            // Remove the previous price because today's price
+            // is greater than or equal to it.
+            int[] previous = stack.pop();
 
-            // Remove it from stack.
-            stack.pop();
+            // Include all the days represented by that entry.
+            span += previous[1];
         }
 
         // Store today's price along with its calculated span.
-        stack.push(new Pair(price, span));
+        // Remaining stack prices are strictly greater than today's.
+        stack.push(new int[]{price, span});
 
-        // Return answer for today.
+        // Return the number of consecutive qualifying days.
         return span;
     }
 }
+
+/**
+ * Your StockSpanner object will be instantiated and called as such:
+ * StockSpanner obj = new StockSpanner();
+ * int param_1 = obj.next(price);
+ */
