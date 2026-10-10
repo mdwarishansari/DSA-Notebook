@@ -1,42 +1,40 @@
+
+import java.util.Stack;
+
 class Solution {
-
     public int[] dailyTemperatures(int[] temperatures) {
-
-        // Total number of days
         int n = temperatures.length;
 
-        // Answer array
-        int[] result = new int[n];
+        // Stores the number of days to wait for a warmer temperature.
+        // Defaults to 0 when no warmer day exists.
+        int[] answer = new int[n];
 
-        // Monotonic Decreasing Stack
-        // Stores indices of temperatures
-        Stack<Integer> st = new Stack<>();
+        // Store day indices instead of temperatures so we can
+        // calculate the waiting time using currentIndex - previousIndex.
+        Stack<Integer> stack = new Stack<>();
 
-        // Traverse from right to left
-        for (int i = n - 1; i >= 0; i--) {
+        // Process each day from left to right.
+        for (int i = 0; i < n; i++) {
 
-            // Remove all temperatures that are
-            // smaller than or equal to today's temperature.
-            // They cannot be the next warmer day.
-            while (!st.isEmpty() &&
-                   temperatures[i] >= temperatures[st.peek()]) {
-                st.pop();
+            // If today's temperature is warmer than the temperature
+            // at the top index, today's day resolves that previous day.
+            while (!stack.isEmpty()
+                    && temperatures[i] > temperatures[stack.peek()]) {
+
+                // Remove the index of the previous colder day.
+                int previousDay = stack.pop();
+
+                // Calculate how many days the previous day had to wait.
+                answer[previousDay] = i - previousDay;
             }
 
-            // If stack is empty,
-            // no warmer day exists.
-            if (st.isEmpty()) {
-                result[i] = 0;
-            }
-            // Otherwise, top of stack is the next warmer day.
-            else {
-                result[i] = st.peek() - i;
-            }
-
-            // Add today's index for future comparisons.
-            st.push(i);
+            // Push today's index because its warmer day
+            // has not been found yet.
+            stack.push(i);
         }
 
-        return result;
+        // Any indices remaining in the stack have no warmer future day.
+        // Their answer values remain 0.
+        return answer;
     }
 }
