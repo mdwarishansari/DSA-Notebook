@@ -286,6 +286,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0227-basic-calculator-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0227-basic-calculator-ii) |
 | [0232-implement-queue-using-stacks](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0232-implement-queue-using-stacks) |
 | [0234-palindrome-linked-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0234-palindrome-linked-list) |
+| [0394-decode-string](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0394-decode-string) |
 | [0496-next-greater-element-i](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0503-next-greater-element-ii) |
 | [0735-asteroid-collision](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0735-asteroid-collision) |
@@ -393,6 +394,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0227-basic-calculator-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0227-basic-calculator-ii) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0344-reverse-string](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0344-reverse-string) |
+| [0394-decode-string](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0394-decode-string) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0516-longest-palindromic-subsequence](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0516-longest-palindromic-subsequence) |
 | [0567-permutation-in-string](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0567-permutation-in-string) |
@@ -488,6 +490,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0206-reverse-linked-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0206-reverse-linked-list) |
 | [0231-power-of-two](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0231-power-of-two) |
 | [0234-palindrome-linked-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0234-palindrome-linked-list) |
+| [0394-decode-string](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0394-decode-string) |
 | [3483-unique-3-digit-even-numbers](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3483-unique-3-digit-even-numbers) |
 ## Merge Sort
 |  |
