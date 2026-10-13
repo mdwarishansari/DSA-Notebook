@@ -299,6 +299,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1047-remove-all-adjacent-duplicates-in-string](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1047-remove-all-adjacent-duplicates-in-string) |
 | [1096-brace-expansion-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1096-brace-expansion-ii) |
 | [1541-minimum-insertions-to-balance-a-parentheses-string](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1541-minimum-insertions-to-balance-a-parentheses-string) |
+| [1544-make-the-string-great](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1544-make-the-string-great) |
 ## Monotonic Stack
 |  |
 | ------- |
@@ -414,6 +415,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1268-search-suggestions-system](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1268-search-suggestions-system) |
 | [1520-maximum-number-of-non-overlapping-substrings](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1520-maximum-number-of-non-overlapping-substrings) |
 | [1541-minimum-insertions-to-balance-a-parentheses-string](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1541-minimum-insertions-to-balance-a-parentheses-string) |
+| [1544-make-the-string-great](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1544-make-the-string-great) |
 | [2472-maximum-number-of-non-overlapping-palindrome-substrings](https://github.com/mdwarishansari/DSA-Notebook/tree/master/2472-maximum-number-of-non-overlapping-palindrome-substrings) |
 | [2904-shortest-and-lexicographically-smallest-beautiful-string](https://github.com/mdwarishansari/DSA-Notebook/tree/master/2904-shortest-and-lexicographically-smallest-beautiful-string) |
 | [3498-reverse-degree-of-a-string](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3498-reverse-degree-of-a-string) |
