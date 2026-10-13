@@ -162,6 +162,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0567-permutation-in-string](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0567-permutation-in-string) |
 | [0647-palindromic-substrings](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0647-palindromic-substrings) |
 | [0680-valid-palindrome-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0680-valid-palindrome-ii) |
+| [0844-backspace-string-compare](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0844-backspace-string-compare) |
 | [0876-middle-of-the-linked-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0876-middle-of-the-linked-list) |
 | [2472-maximum-number-of-non-overlapping-palindrome-substrings](https://github.com/mdwarishansari/DSA-Notebook/tree/master/2472-maximum-number-of-non-overlapping-palindrome-substrings) |
 | [3734-lexicographically-smallest-palindromic-permutation-greater-than-target](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3734-lexicographically-smallest-palindromic-permutation-greater-than-target) |
@@ -291,6 +292,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0503-next-greater-element-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0503-next-greater-element-ii) |
 | [0735-asteroid-collision](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0735-asteroid-collision) |
 | [0739-daily-temperatures](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0739-daily-temperatures) |
+| [0844-backspace-string-compare](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0844-backspace-string-compare) |
 | [0856-score-of-parentheses](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0856-score-of-parentheses) |
 | [0901-online-stock-span](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0901-online-stock-span) |
 | [1021-remove-outermost-parentheses](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1021-remove-outermost-parentheses) |
@@ -401,6 +403,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0647-palindromic-substrings](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0647-palindromic-substrings) |
 | [0680-valid-palindrome-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0680-valid-palindrome-ii) |
 | [0721-accounts-merge](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0721-accounts-merge) |
+| [0844-backspace-string-compare](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0844-backspace-string-compare) |
 | [0856-score-of-parentheses](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0856-score-of-parentheses) |
 | [0940-distinct-subsequences-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0940-distinct-subsequences-ii) |
 | [1021-remove-outermost-parentheses](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1021-remove-outermost-parentheses) |
@@ -765,6 +768,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0735-asteroid-collision](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0735-asteroid-collision) |
+| [0844-backspace-string-compare](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0844-backspace-string-compare) |
 | [3498-reverse-degree-of-a-string](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3498-reverse-degree-of-a-string) |
 ## Segment Tree
 |  |
