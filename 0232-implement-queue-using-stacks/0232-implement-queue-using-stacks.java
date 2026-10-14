@@ -1,55 +1,57 @@
+
 import java.util.Stack;
 
 class MyQueue {
 
-    // Stores newly inserted elements
-    private Stack<Integer> inputStack;
+    // Stores newly inserted elements.
+    private Stack<Integer> inStack;
 
-    // Stores elements in queue order
-    private Stack<Integer> outputStack;
+    // Supplies elements in FIFO order.
+    private Stack<Integer> outStack;
 
     public MyQueue() {
-        inputStack = new Stack<>();
-        outputStack = new Stack<>();
+        inStack = new Stack<>();
+        outStack = new Stack<>();
     }
 
-    // Push element to the back of queue
     public void push(int x) {
-        inputStack.push(x);
+        // Add the new element to the back of the queue.
+        inStack.push(x);
     }
 
-    // Remove front element
+    // Transfers elements only when outStack is empty.
+    private void transfer() {
+        if (outStack.isEmpty()) {
+            // Reversing the order makes the oldest
+            // inserted element available at the top.
+            while (!inStack.isEmpty()) {
+                outStack.push(inStack.pop());
+            }
+        }
+    }
+
     public int pop() {
+        // Ensure the front element is on top.
+        transfer();
 
-        // Move elements only when needed
-        if (outputStack.isEmpty()) {
-
-            while (!inputStack.isEmpty()) {
-                outputStack.push(inputStack.pop());
-            }
-        }
-
-        return outputStack.pop();
+        // Remove and return the front element.
+        return outStack.pop();
     }
 
-    // Get front element
     public int peek() {
+        // Ensure the front element is on top.
+        transfer();
 
-        if (outputStack.isEmpty()) {
-
-            while (!inputStack.isEmpty()) {
-                outputStack.push(inputStack.pop());
-            }
-        }
-
-        return outputStack.peek();
+        // Return the front element without removing it.
+        return outStack.peek();
     }
 
-    // Check if queue is empty
     public boolean empty() {
-        return inputStack.isEmpty() && outputStack.isEmpty();
+        // The queue is empty only if both stacks are empty.
+        return inStack.isEmpty() && outStack.isEmpty();
     }
 }
+
 
 /**
  * Your MyQueue object will be instantiated and called as such:
