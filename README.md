@@ -69,6 +69,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0560-subarray-sum-equals-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0560-subarray-sum-equals-k) |
 | [0621-task-scheduler](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0621-task-scheduler) |
 | [0622-design-circular-queue](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0622-design-circular-queue) |
+| [0641-design-circular-deque](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0641-design-circular-deque) |
 | [0704-binary-search](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0704-binary-search) |
 | [0713-subarray-product-less-than-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0713-subarray-product-less-than-k) |
 | [0721-accounts-merge](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0721-accounts-merge) |
@@ -341,6 +342,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0232-implement-queue-using-stacks](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0232-implement-queue-using-stacks) |
 | [0239-sliding-window-maximum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0239-sliding-window-maximum) |
 | [0622-design-circular-queue](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0622-design-circular-queue) |
+| [0641-design-circular-deque](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0641-design-circular-deque) |
 | [0918-maximum-sum-circular-subarray](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0918-maximum-sum-circular-subarray) |
 ## Heap (Priority Queue)
 |  |
@@ -480,6 +482,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0295-find-median-from-data-stream](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0295-find-median-from-data-stream) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0622-design-circular-queue](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0622-design-circular-queue) |
+| [0641-design-circular-deque](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0641-design-circular-deque) |
 | [0901-online-stock-span](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0901-online-stock-span) |
 | [1381-design-a-stack-with-increment-operation](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1381-design-a-stack-with-increment-operation) |
 ## Data Stream
@@ -503,6 +506,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0206-reverse-linked-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0206-reverse-linked-list) |
 | [0234-palindrome-linked-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0234-palindrome-linked-list) |
 | [0622-design-circular-queue](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0622-design-circular-queue) |
+| [0641-design-circular-deque](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0641-design-circular-deque) |
 | [0876-middle-of-the-linked-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0876-middle-of-the-linked-list) |
 | [2058-find-the-minimum-and-maximum-number-of-nodes-between-critical-points](https://github.com/mdwarishansari/DSA-Notebook/tree/master/2058-find-the-minimum-and-maximum-number-of-nodes-between-critical-points) |
 ## Recursion
