@@ -1,36 +1,24 @@
+
 class Solution {
-
     public int climbStairs(int n) {
-
-        // Base case:
-        // There is only 1 way to reach the first step.
-        if (n == 1) {
-            return 1;
+        // Base cases: 1 way for step 1, 2 ways for step 2
+        if (n <= 2) {
+            return n;
         }
 
-        // Number of ways to reach:
-        // step 1 -> 1 way
-        // step 2 -> 2 ways
-        int prev2 = 1; // ways[i - 2]
-        int prev1 = 2; // ways[i - 1]
+        // Ways to reach the first and second steps
+        int a = 1;
+        int b = 2;
 
-        // Calculate the number of ways for every step
-        // starting from step 3.
+        // Calculate the number of ways for each next step
         for (int i = 3; i <= n; i++) {
+            int c = a + b; // Ways from the previous two steps
 
-            // Current ways = ways of previous step
-            //              + ways of two steps before
-            int current = prev1 + prev2;
-
-            // Move the values forward:
-            // prev2 becomes the previous step's value
-            // prev1 becomes the current step's value
-            prev2 = prev1;
-            prev1 = current;
+            a = b;         // Update previous step
+            b = c;         // Update current step
         }
 
-        // prev1 now contains the number of ways
-        // to reach the nth step.
-        return prev1;
+        // b stores the number of ways to reach step n
+        return b;
     }
 }
