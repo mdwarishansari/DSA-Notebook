@@ -1,7 +1,8 @@
+
 class Solution {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
 
-        // Always binary search on the smaller array
+        // Always binary search on the smaller array.
         if (nums1.length > nums2.length) {
             return findMedianSortedArrays(nums2, nums1);
         }
@@ -9,57 +10,46 @@ class Solution {
         int m = nums1.length;
         int n = nums2.length;
 
-        int left = 0;
-        int right = m;
+        int low = 0, high = m;
 
-        while (left <= right) {
+        // Binary search for the correct partition.
+        while (low <= high) {
+            int i = low + (high - low) / 2;
+            int j = (m + n + 1) / 2 - i;
 
-            // Partition nums1
-            int partition1 = (left + right) / 2;
+            // Left and right boundary values of both arrays.
+            int l1 = (i == 0) ? Integer.MIN_VALUE : nums1[i - 1];
+            int r1 = (i == m) ? Integer.MAX_VALUE : nums1[i];
 
-            // Partition nums2
-            int partition2 = (m + n + 1) / 2 - partition1;
+            int l2 = (j == 0) ? Integer.MIN_VALUE : nums2[j - 1];
+            int r2 = (j == n) ? Integer.MAX_VALUE : nums2[j];
 
-            // Elements immediately around the partitions
-            int left1 = (partition1 == 0)
-                    ? Integer.MIN_VALUE
-                    : nums1[partition1 - 1];
+            // Check whether every left element is <= every right element.
+            if (l1 <= r2 && l2 <= r1) {
 
-            int right1 = (partition1 == m)
-                    ? Integer.MAX_VALUE
-                    : nums1[partition1];
-
-            int left2 = (partition2 == 0)
-                    ? Integer.MIN_VALUE
-                    : nums2[partition2 - 1];
-
-            int right2 = (partition2 == n)
-                    ? Integer.MAX_VALUE
-                    : nums2[partition2];
-
-            // Correct partition
-            if (left1 <= right2 && left2 <= right1) {
-
-                // Odd total length
+                // Odd total: median is the largest element on the left.
                 if ((m + n) % 2 == 1) {
-                    return Math.max(left1, left2);
+                    return Math.max(l1, l2);
                 }
 
-                // Even total length
-                return (Math.max(left1, left2)
-                        + Math.min(right1, right2)) / 2.0;
+                // Even total: average of the two middle elements.
+                int leftMax = Math.max(l1, l2);
+                int rightMin = Math.min(r1, r2);
+
+                return ((double) leftMax + rightMin) / 2.0;
             }
 
-            // nums1 partition is too far right
-            if (left1 > right2) {
-                right = partition1 - 1;
+            // Too many elements from nums1 on the left.
+            else if (l1 > r2) {
+                high = i - 1;
             }
-            // nums1 partition is too far left
+
+            // Too few elements from nums1 on the left.
             else {
-                left = partition1 + 1;
+                low = i + 1;
             }
         }
 
-        return 0.0;
+        return 0.0; // Unreachable for valid LeetCode input.
     }
 }
