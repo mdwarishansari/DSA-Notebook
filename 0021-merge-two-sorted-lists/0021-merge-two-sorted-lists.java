@@ -1,15 +1,11 @@
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
  *     int val;
  *     ListNode next;
- *
  *     ListNode() {}
- *
- *     ListNode(int val) {
- *         this.val = val;
- *     }
- *
+ *     ListNode(int val) { this.val = val; }
  *     ListNode(int val, ListNode next) {
  *         this.val = val;
  *         this.next = next;
@@ -18,70 +14,38 @@
  */
 
 class Solution {
-
-    /**
-     * Merges two sorted linked lists into one sorted linked list.
-     */
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
 
-        // ------------------------------------------------------------
-        // Create a dummy node.
-        //
-        // Dummy node makes handling the head of the merged list easy.
-        // We will finally return dummy.next.
-        // ------------------------------------------------------------
-        ListNode dummy = new ListNode(-1);
+        // Dummy node simplifies handling the first merged node.
+        ListNode dummy = new ListNode(0);
 
-        // Tail always points to the last node
-        // in our merged linked list.
-        ListNode tail = dummy;
+        // curr always points to the last node in the merged list.
+        ListNode curr = dummy;
 
-        // ------------------------------------------------------------
-        // Continue until one list becomes empty.
-        // ------------------------------------------------------------
+        // Compare nodes while both lists have elements.
         while (list1 != null && list2 != null) {
 
-            // If current node of list1 is smaller
+            // Choose the smaller node from the two lists.
             if (list1.val <= list2.val) {
-
-                // Connect list1 node after tail
-                tail.next = list1;
-
-                // Move list1 forward
+                curr.next = list1;
                 list1 = list1.next;
-
             } else {
-
-                // Connect list2 node after tail
-                tail.next = list2;
-
-                // Move list2 forward
+                curr.next = list2;
                 list2 = list2.next;
             }
 
-            // Move tail to the node we just attached
-            tail = tail.next;
+            // Move to the newly attached node.
+            curr = curr.next;
         }
 
-        // ------------------------------------------------------------
-        // If list1 still has remaining nodes,
-        // connect all of them.
-        // ------------------------------------------------------------
+        // Attach the remaining nodes from either list.
         if (list1 != null) {
-            tail.next = list1;
+            curr.next = list1;
+        } else {
+            curr.next = list2;
         }
 
-        // ------------------------------------------------------------
-        // If list2 still has remaining nodes,
-        // connect all of them.
-        // ------------------------------------------------------------
-        if (list2 != null) {
-            tail.next = list2;
-        }
-
-        // ------------------------------------------------------------
-        // Skip the dummy node and return the real head.
-        // ------------------------------------------------------------
+        // Skip the dummy node and return the merged list.
         return dummy.next;
     }
 }
