@@ -1,63 +1,35 @@
+
 import java.util.*;
 
 class Solution {
+    public List<List<Integer>> subsets(int[] nums) {
+        List<List<Integer>> ans = new ArrayList<>();
+        List<Integer> cur = new ArrayList<>();
 
-    // This list stores ALL the subsets.
-    List<List<Integer>> result = new ArrayList<>();
+        backtrack(0, nums, cur, ans);
 
-    /*
-     * index   -> Current element we are deciding on.
-     * nums    -> Original input array.
-     * current -> Subset we are currently building.
-     */
-    private void solve(int index, int[] nums, List<Integer> current) {
-
-        // ===========================
-        // BASE CASE
-        // ===========================
-        // If we have processed every element,
-        // then the current subset is complete.
-        if (index == nums.length) {
-
-            // Store a COPY of the current subset.
-            result.add(new ArrayList<>(current));
-
-            return;
-        }
-
-        // ==================================================
-        // CHOICE 1 : TAKE the current element
-        // ==================================================
-
-        // Include nums[index] in our subset.
-        current.add(nums[index]);
-
-        // Move to the next element.
-        solve(index + 1, nums, current);
-
-        // ==================================================
-        // BACKTRACK
-        // ==================================================
-        // Remove the last element so that
-        // we can try the "Don't Take" choice.
-        current.remove(current.size() - 1);
-
-        // ==================================================
-        // CHOICE 2 : DON'T TAKE the current element
-        // ==================================================
-
-        // Move to the next element WITHOUT adding it.
-        solve(index + 1, nums, current);
+        return ans;
     }
 
-    public List<List<Integer>> subsets(int[] nums) {
+    // Generate all subsets starting from index 'start'
+    private void backtrack(int start, int[] nums,
+                           List<Integer> cur,
+                           List<List<Integer>> ans) {
 
-        // Empty subset at the beginning.
-        List<Integer> current = new ArrayList<>();
+        // Save a copy of the current subset
+        ans.add(new ArrayList<>(cur));
 
-        // Start recursion from index 0.
-        solve(0, nums, current);
+        // Try choosing each remaining element
+        for (int i = start; i < nums.length; i++) {
 
-        return result;
+            // Include the current element
+            cur.add(nums[i]);
+
+            // Explore subsets containing this element
+            backtrack(i + 1, nums, cur, ans);
+
+            // Remove it to explore other possibilities
+            cur.remove(cur.size() - 1);
+        }
     }
 }
