@@ -1,9 +1,8 @@
 /**
  * Definition for singly-linked list.
- * class ListNode {
+ * public class ListNode {
  *     int val;
  *     ListNode next;
- *
  *     ListNode(int x) {
  *         val = x;
  *         next = null;
@@ -12,86 +11,33 @@
  */
 
 public class Solution {
-
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
 
-        // Pointer to traverse List A
-        ListNode tempA = headA;
+        // Start one pointer at the head of each linked list.
+        ListNode pA = headA;
+        ListNode pB = headB;
 
-        // Pointer to traverse List B
-        ListNode tempB = headB;
+        // Continue until both pointers refer to the same node.
+        while (pA != pB) {
 
-        // Store lengths of both linked lists
-        int lengthA = 0;
-        int lengthB = 0;
-
-        // ----------------------------
-        // Step 1 : Calculate length of List A
-        // ----------------------------
-        while (tempA != null) {
-            lengthA++;
-            tempA = tempA.next;
-        }
-
-        // ----------------------------
-        // Step 2 : Calculate length of List B
-        // ----------------------------
-        while (tempB != null) {
-            lengthB++;
-            tempB = tempB.next;
-        }
-
-        // Reset pointers back to the heads
-        tempA = headA;
-        tempB = headB;
-
-        // ----------------------------
-        // Step 3 : Move the pointer of
-        // the longer list ahead
-        // ----------------------------
-
-        if (lengthA > lengthB) {
-
-            // Difference between lengths
-            int steps = lengthA - lengthB;
-
-            // Move pointer in List A
-            while (steps > 0) {
-                tempA = tempA.next;
-                steps--;
+            // If pA reaches the end, switch it to list B.
+            // Otherwise, move to the next node.
+            if (pA == null) {
+                pA = headB;
+            } else {
+                pA = pA.next;
             }
 
-        } else {
-
-            // Difference between lengths
-            int steps = lengthB - lengthA;
-
-            // Move pointer in List B
-            while (steps > 0) {
-                tempB = tempB.next;
-                steps--;
+            // If pB reaches the end, switch it to list A.
+            // Otherwise, move to the next node.
+            if (pB == null) {
+                pB = headA;
+            } else {
+                pB = pB.next;
             }
         }
 
-        // ----------------------------
-        // Step 4 : Move both pointers together
-        // ----------------------------
-        while (tempA != null && tempB != null) {
-
-            // If both pointers point to the same node,
-            // this is the intersection.
-            if (tempA == tempB) {
-                return tempA;
-            }
-
-            // Otherwise move both forward
-            tempA = tempA.next;
-            tempB = tempB.next;
-        }
-
-        // ----------------------------
-        // No intersection found
-        // ----------------------------
-        return null;
+        // Return the intersection node, or null if none exists.
+        return pA;
     }
 }
