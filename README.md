@@ -851,4 +851,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2916-subarrays-distinct-element-sum-of-squares-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/2916-subarrays-distinct-element-sum-of-squares-ii) |
+## Floyd's Cycle Finding Algorithm
+|  |
+| ------- |
+| [0141-linked-list-cycle](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0141-linked-list-cycle) |
 <!---LeetCode Topics End-->
