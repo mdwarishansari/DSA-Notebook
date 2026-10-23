@@ -9,32 +9,30 @@
  *     }
  * }
  */
-class Solution {
 
+public class Solution {
     public boolean hasCycle(ListNode head) {
 
-        // Two pointers starting from the head
+        // Both pointers start at the head of the linked list.
         ListNode slow = head;
         ListNode fast = head;
 
-        // Continue while fast can safely move two steps
+        // Fast must have a next node to move two steps safely.
         while (fast != null && fast.next != null) {
 
-            // Slow moves one node
+            // Slow moves one step.
             slow = slow.next;
 
-            // Fast moves two nodes
+            // Fast moves two steps.
             fast = fast.next.next;
 
-            // If both pointers meet,
-            // the list contains a cycle
+            // If both pointers meet, a cycle exists.
             if (slow == fast) {
                 return true;
             }
         }
 
-        // Fast reached the end of the list,
-        // so no cycle exists
+        // Fast reached the end, so no cycle exists.
         return false;
     }
 }
