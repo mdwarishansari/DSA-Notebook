@@ -106,6 +106,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3550-smallest-index-with-digit-sum-equal-to-index](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3550-smallest-index-with-digit-sum-equal-to-index) |
 | [3551-minimum-swaps-to-sort-by-digit-sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3551-minimum-swaps-to-sort-by-digit-sum) |
 | [3568-minimum-moves-to-clean-the-classroom](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3568-minimum-moves-to-clean-the-classroom) |
+| [3619-count-islands-with-total-value-divisible-by-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3619-count-islands-with-total-value-divisible-by-k) |
 | [3644-maximum-k-to-sort-a-permutation](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3644-maximum-k-to-sort-a-permutation) |
 | [3718-smallest-missing-multiple-of-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3718-smallest-missing-multiple-of-k) |
 | [3875-construct-uniform-parity-array-i](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3875-construct-uniform-parity-array-i) |
@@ -626,6 +627,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0733-flood-fill](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0733-flood-fill) |
 | [0743-network-delay-time](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0743-network-delay-time) |
 | [0785-is-graph-bipartite](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0785-is-graph-bipartite) |
+| [3619-count-islands-with-total-value-divisible-by-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3619-count-islands-with-total-value-divisible-by-k) |
 ## Binary Tree
 |  |
 | ------- |
@@ -671,6 +673,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0994-rotting-oranges](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0994-rotting-oranges) |
 | [1096-brace-expansion-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1096-brace-expansion-ii) |
 | [3568-minimum-moves-to-clean-the-classroom](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3568-minimum-moves-to-clean-the-classroom) |
+| [3619-count-islands-with-total-value-divisible-by-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3619-count-islands-with-total-value-divisible-by-k) |
 ## Binary Lifting
 |  |
 | ------- |
@@ -718,6 +721,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0994-rotting-oranges](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0994-rotting-oranges) |
 | [1314-matrix-block-sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1314-matrix-block-sum) |
 | [3568-minimum-moves-to-clean-the-classroom](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3568-minimum-moves-to-clean-the-classroom) |
+| [3619-count-islands-with-total-value-divisible-by-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3619-count-islands-with-total-value-divisible-by-k) |
 ## Union-Find
 |  |
 | ------- |
@@ -728,6 +732,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0721-accounts-merge](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0721-accounts-merge) |
 | [0785-is-graph-bipartite](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0785-is-graph-bipartite) |
 | [2948-make-lexicographically-smallest-array-by-swapping-elements](https://github.com/mdwarishansari/DSA-Notebook/tree/master/2948-make-lexicographically-smallest-array-by-swapping-elements) |
+| [3619-count-islands-with-total-value-divisible-by-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3619-count-islands-with-total-value-divisible-by-k) |
 ## Graph Theory
 |  |
 | ------- |
