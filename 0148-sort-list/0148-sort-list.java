@@ -8,100 +8,66 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
+
 class Solution {
 
-    // Main function that sorts the linked list
     public ListNode sortList(ListNode head) {
 
-        // Base Case:
-        // If the list is empty or has only one node,
-        // it is already sorted.
+        // Base case: an empty list or a single node is already sorted.
         if (head == null || head.next == null) {
             return head;
         }
 
-        // Find the middle node of the linked list.
-        ListNode middle = findMiddle(head);
+        // Find the node just before the middle of the list.
+        ListNode slow = head;
+        ListNode fast = head;
 
-        // Right half starts after the middle.
-        ListNode rightHead = middle.next;
+        while (fast.next != null && fast.next.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
 
-        // Break the list into two separate halves.
-        middle.next = null;
+        // Split the list into two separate halves.
+        ListNode secondHalf = slow.next;
+        slow.next = null;
 
-        // Recursively sort left half.
+        // Recursively sort each half.
         ListNode left = sortList(head);
-
-        // Recursively sort right half.
-        ListNode right = sortList(rightHead);
+        ListNode right = sortList(secondHalf);
 
         // Merge the two sorted halves.
         return merge(left, right);
     }
 
-    // -----------------------------------------------------
-    // Function to find the middle node using Slow & Fast Pointer
-    // -----------------------------------------------------
-    private ListNode findMiddle(ListNode head) {
+    private ListNode merge(ListNode left, ListNode right) {
 
-        ListNode slow = head;
-
-        // Start fast one step ahead.
-        // This ensures slow stops at the node BEFORE
-        // the beginning of the right half.
-        ListNode fast = head.next;
-
-        while (fast != null && fast.next != null) {
-
-            slow = slow.next;
-            fast = fast.next.next;
-        }
-
-        return slow;
-    }
-
-    // -----------------------------------------------------
-    // Merge two sorted linked lists
-    // -----------------------------------------------------
-    private ListNode merge(ListNode list1, ListNode list2) {
-
-        // Dummy node simplifies merging.
-        ListNode dummy = new ListNode(-1);
-
-        // Tail always points to the last node
-        // in the merged list.
+        // Dummy node makes it easier to build the result.
+        ListNode dummy = new ListNode(0);
         ListNode tail = dummy;
 
-        // Compare nodes from both lists
-        while (list1 != null && list2 != null) {
+        // Select the smaller node from the two lists.
+        while (left != null && right != null) {
 
-            if (list1.val <= list2.val) {
-
-                tail.next = list1;
-                list1 = list1.next;
-
+            if (left.val <= right.val) {
+                tail.next = left;
+                left = left.next;
             } else {
-
-                tail.next = list2;
-                list2 = list2.next;
+                tail.next = right;
+                right = right.next;
             }
 
-            // Move tail forward.
+            // Advance the tail of the merged list.
             tail = tail.next;
         }
 
-        // Attach remaining nodes from list1.
-        if (list1 != null) {
-            tail.next = list1;
+        // Attach any remaining nodes.
+        if (left != null) {
+            tail.next = left;
+        } else {
+            tail.next = right;
         }
 
-        // Attach remaining nodes from list2.
-        if (list2 != null) {
-            tail.next = list2;
-        }
-
-        // First node is dummy,
-        // actual sorted list starts from dummy.next
+        // Return the merged list, excluding the dummy node.
         return dummy.next;
     }
 }
