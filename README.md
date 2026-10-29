@@ -109,6 +109,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3619-count-islands-with-total-value-divisible-by-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3619-count-islands-with-total-value-divisible-by-k) |
 | [3644-maximum-k-to-sort-a-permutation](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3644-maximum-k-to-sort-a-permutation) |
 | [3718-smallest-missing-multiple-of-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3718-smallest-missing-multiple-of-k) |
+| [3841-palindromic-path-queries-in-a-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3841-palindromic-path-queries-in-a-tree) |
 | [3875-construct-uniform-parity-array-i](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3875-construct-uniform-parity-array-i) |
 | [3876-construct-uniform-parity-array-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3876-construct-uniform-parity-array-ii) |
 | [3886-sum-of-sortable-integers](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3886-sum-of-sortable-integers) |
@@ -407,6 +408,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0347-top-k-frequent-elements](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0347-top-k-frequent-elements) |
 | [0918-maximum-sum-circular-subarray](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0918-maximum-sum-circular-subarray) |
 | [0973-k-closest-points-to-origin](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0973-k-closest-points-to-origin) |
+| [3841-palindromic-path-queries-in-a-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3841-palindromic-path-queries-in-a-tree) |
 ## String
 |  |
 | ------- |
@@ -449,6 +451,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2904-shortest-and-lexicographically-smallest-beautiful-string](https://github.com/mdwarishansari/DSA-Notebook/tree/master/2904-shortest-and-lexicographically-smallest-beautiful-string) |
 | [3498-reverse-degree-of-a-string](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3498-reverse-degree-of-a-string) |
 | [3734-lexicographically-smallest-palindromic-permutation-greater-than-target](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3734-lexicographically-smallest-palindromic-permutation-greater-than-target) |
+| [3841-palindromic-path-queries-in-a-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3841-palindromic-path-queries-in-a-tree) |
 | [3863-minimum-operations-to-sort-a-string](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3863-minimum-operations-to-sort-a-string) |
 ## Counting
 |  |
@@ -581,6 +584,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/mdwarishansari/DSA-Notebook/tree/master/2897-apply-operations-on-array-to-maximize-sum-of-squares) |
 | [3568-minimum-moves-to-clean-the-classroom](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3568-minimum-moves-to-clean-the-classroom) |
 | [3644-maximum-k-to-sort-a-permutation](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3644-maximum-k-to-sort-a-permutation) |
+| [3841-palindromic-path-queries-in-a-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3841-palindromic-path-queries-in-a-tree) |
 ## Tree
 |  |
 | ------- |
@@ -602,6 +606,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0543-diameter-of-binary-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0543-diameter-of-binary-tree) |
 | [0700-search-in-a-binary-search-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0700-search-in-a-binary-search-tree) |
 | [0701-insert-into-a-binary-search-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0701-insert-into-a-binary-search-tree) |
+| [3841-palindromic-path-queries-in-a-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3841-palindromic-path-queries-in-a-tree) |
 ## Depth-First Search
 |  |
 | ------- |
@@ -629,6 +634,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0743-network-delay-time](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0743-network-delay-time) |
 | [0785-is-graph-bipartite](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0785-is-graph-bipartite) |
 | [3619-count-islands-with-total-value-divisible-by-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3619-count-islands-with-total-value-divisible-by-k) |
+| [3841-palindromic-path-queries-in-a-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3841-palindromic-path-queries-in-a-tree) |
 ## Binary Tree
 |  |
 | ------- |
@@ -843,6 +849,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [2916-subarrays-distinct-element-sum-of-squares-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/2916-subarrays-distinct-element-sum-of-squares-ii) |
 | [3525-find-x-value-of-array-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3525-find-x-value-of-array-ii) |
+| [3841-palindromic-path-queries-in-a-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3841-palindromic-path-queries-in-a-tree) |
 ## Pigeonhole Principle
 |  |
 | ------- |
@@ -866,6 +873,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2916-subarrays-distinct-element-sum-of-squares-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/2916-subarrays-distinct-element-sum-of-squares-ii) |
+| [3841-palindromic-path-queries-in-a-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3841-palindromic-path-queries-in-a-tree) |
 ## Floyd's Cycle Finding Algorithm
 |  |
 | ------- |
