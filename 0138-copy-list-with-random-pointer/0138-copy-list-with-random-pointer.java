@@ -1,71 +1,64 @@
 /*
- // Definition for a Node.
- class Node {
-     int val;
-     Node next;
-     Node random;
+// Definition for a Node.
+class Node {
+    int val;
+    Node next;
+    Node random;
 
-     public Node(int val) {
-         this.val = val;
-         this.next = null;
-         this.random = null;
-     }
- }
+    public Node(int val) {
+        this.val = val;
+        this.next = null;
+        this.random = null;
+    }
+}
 */
 
-class Solution {
 
+import java.util.HashMap;
+
+class Solution {
     public Node copyRandomList(Node head) {
 
-        // If the original list is empty,
-        // there is nothing to copy.
+        // Handle an empty linked list.
         if (head == null) {
             return null;
         }
 
-        // HashMap to store:
-        // Original Node  --> Copied Node
+        // Map original nodes to their corresponding copied nodes.
         HashMap<Node, Node> map = new HashMap<>();
 
-        // ===========================
-        // First Pass
-        // Create all copied nodes.
-        // ===========================
-        Node current = head;
+        // First pass: Create a copy of every node.
+        Node curr = head;
 
-        while (current != null) {
+        while (curr != null) {
 
-            // Create a new node having the same value
-            Node copyNode = new Node(current.val);
+            // Create a new node with the same value.
+            Node copy = new Node(curr.val);
 
-            // Store mapping
-            map.put(current, copyNode);
+            // Store original node -> copied node.
+            map.put(curr, copy);
 
-            current = current.next;
+            curr = curr.next;
         }
 
-        // ===========================
-        // Second Pass
-        // Connect next and random pointers.
-        // ===========================
-        current = head;
+        // Second pass: Connect next and random pointers.
+        curr = head;
 
-        while (current != null) {
+        while (curr != null) {
 
-            // Get copied node corresponding to current node
-            Node copyNode = map.get(current);
+            // Get the copied version of the current node.
+            Node copy = map.get(curr);
 
-            // Connect next pointer
-            // map.get(null) automatically returns null
-            copyNode.next = map.get(current.next);
+            // Connect the copied next pointer.
+            copy.next = map.get(curr.next);
 
-            // Connect random pointer
-            copyNode.random = map.get(current.random);
+            // Connect the copied random pointer.
+            copy.random = map.get(curr.random);
 
-            current = current.next;
+            curr = curr.next;
         }
 
-        // Return copied head
+        // Return the copied head.
         return map.get(head);
     }
 }
