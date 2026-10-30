@@ -311,6 +311,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0232-implement-queue-using-stacks](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0232-implement-queue-using-stacks) |
 | [0234-palindrome-linked-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0234-palindrome-linked-list) |
 | [0394-decode-string](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0394-decode-string) |
+| [0445-add-two-numbers-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0445-add-two-numbers-ii) |
 | [0496-next-greater-element-i](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0503-next-greater-element-ii) |
 | [0735-asteroid-collision](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0735-asteroid-collision) |
@@ -485,6 +486,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0189-rotate-array](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0189-rotate-array) |
 | [0227-basic-calculator-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0227-basic-calculator-ii) |
 | [0231-power-of-two](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0231-power-of-two) |
+| [0445-add-two-numbers-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0445-add-two-numbers-ii) |
 | [0509-fibonacci-number](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0509-fibonacci-number) |
 | [0523-continuous-subarray-sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0523-continuous-subarray-sum) |
 | [0973-k-closest-points-to-origin](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0973-k-closest-points-to-origin) |
@@ -540,6 +542,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0206-reverse-linked-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0206-reverse-linked-list) |
 | [0234-palindrome-linked-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0234-palindrome-linked-list) |
 | [0328-odd-even-linked-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0328-odd-even-linked-list) |
+| [0445-add-two-numbers-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0445-add-two-numbers-ii) |
 | [0622-design-circular-queue](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0622-design-circular-queue) |
 | [0641-design-circular-deque](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0641-design-circular-deque) |
 | [0876-middle-of-the-linked-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0876-middle-of-the-linked-list) |
