@@ -135,6 +135,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0347-top-k-frequent-elements](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0347-top-k-frequent-elements) |
 | [0421-maximum-xor-of-two-numbers-in-an-array](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0421-maximum-xor-of-two-numbers-in-an-array) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0438-find-all-anagrams-in-a-string) |
+| [0460-lfu-cache](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0460-lfu-cache) |
 | [0496-next-greater-element-i](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0496-next-greater-element-i) |
 | [0523-continuous-subarray-sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0523-continuous-subarray-sum) |
 | [0560-subarray-sum-equals-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0560-subarray-sum-equals-k) |
@@ -520,6 +521,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0232-implement-queue-using-stacks](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0232-implement-queue-using-stacks) |
 | [0295-find-median-from-data-stream](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0295-find-median-from-data-stream) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [0460-lfu-cache](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0460-lfu-cache) |
 | [0622-design-circular-queue](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0622-design-circular-queue) |
 | [0641-design-circular-deque](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0641-design-circular-deque) |
 | [0901-online-stock-span](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0901-online-stock-span) |
@@ -553,6 +555,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0234-palindrome-linked-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0234-palindrome-linked-list) |
 | [0328-odd-even-linked-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0328-odd-even-linked-list) |
 | [0445-add-two-numbers-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0445-add-two-numbers-ii) |
+| [0460-lfu-cache](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0460-lfu-cache) |
 | [0622-design-circular-queue](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0622-design-circular-queue) |
 | [0641-design-circular-deque](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0641-design-circular-deque) |
 | [0876-middle-of-the-linked-list](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0876-middle-of-the-linked-list) |
@@ -906,4 +909,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0146-lru-cache](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0146-lru-cache) |
+| [0460-lfu-cache](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0460-lfu-cache) |
 <!---LeetCode Topics End-->
