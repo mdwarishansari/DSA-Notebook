@@ -1,72 +1,61 @@
+
 import java.util.*;
 
 class Solution {
-
     public int[] topKFrequent(int[] nums, int k) {
 
-        // ---------------- Step 1 ----------------
-        // Count the frequency of every number
+        // Step 1: Create a HashMap to store element frequencies
         HashMap<Integer, Integer> map = new HashMap<>();
 
+        // Count the frequency of each element
         for (int num : nums) {
-
-            // Increase frequency by 1
             map.put(num, map.getOrDefault(num, 0) + 1);
         }
 
-        /*
-            Example
+        // Step 2: Create buckets based on frequency
+        // Maximum possible frequency is nums.length
+        List<Integer>[] bucket = new List[nums.length + 1];
 
-            nums = [1,1,1,2,2,3]
+        // Step 3: Place each element into its frequency bucket
+        for (int num : map.keySet()) {
 
-            map =
-            {
-                1 -> 3
-                2 -> 2
-                3 -> 1
+            // Get the frequency of the current element
+            int freq = map.get(num);
+
+            // Initialize the bucket if it is empty
+            if (bucket[freq] == null) {
+                bucket[freq] = new ArrayList<>();
             }
-        */
 
+            // Add the element to its frequency bucket
+            bucket[freq].add(num);
+        }
 
-        // ---------------- Step 2 ----------------
-        // Min Heap based on frequency
-        //
-        // Each element in heap is a Map Entry
-        // (Number, Frequency)
-        //
-        // Smaller frequency comes first.
-        PriorityQueue<Map.Entry<Integer, Integer>> minHeap =
-                new PriorityQueue<>(
-                        (a, b) -> a.getValue() - b.getValue()
-                );
+        // Step 4: Create an array to store the top k elements
+        int[] result = new int[k];
+        int index = 0;
 
+        // Step 5: Traverse buckets from highest to lowest frequency
+        for (int i = bucket.length - 1; i >= 0; i--) {
 
-        // Process every (Number, Frequency) pair
-        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+            // Skip empty buckets
+            if (bucket[i] == null) {
+                continue;
+            }
 
-            // Add current pair into heap
-            minHeap.offer(entry);
+            // Add elements from the current bucket
+            for (int num : bucket[i]) {
 
-            // If heap size becomes greater than k,
-            // remove the least frequent element.
-            if (minHeap.size() > k) {
-                minHeap.poll();
+                result[index++] = num;
+
+                // Stop when we have collected k elements
+                if (index == k) {
+                    return result;
+                }
             }
         }
 
-
-        // ---------------- Step 3 ----------------
-        // Heap now contains exactly k most frequent elements
-
-        int[] ans = new int[k];
-
-        // Remove elements from heap
-        for (int i = k - 1; i >= 0; i--) {
-
-            // getKey() gives the original number
-            ans[i] = minHeap.poll().getKey();
-        }
-
-        return ans;
+        // Return the result
+        return result;
     }
 }
