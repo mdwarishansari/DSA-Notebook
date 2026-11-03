@@ -4,13 +4,8 @@
  *     int val;
  *     TreeNode left;
  *     TreeNode right;
- *
  *     TreeNode() {}
- *
- *     TreeNode(int val) {
- *         this.val = val;
- *     }
- *
+ *     TreeNode(int val) { this.val = val; }
  *     TreeNode(int val, TreeNode left, TreeNode right) {
  *         this.val = val;
  *         this.left = left;
@@ -18,44 +13,22 @@
  *     }
  * }
  */
-
 class Solution {
-
-    // List to store the postorder traversal
-    List<Integer> answer = new ArrayList<>();
-
     public List<Integer> postorderTraversal(TreeNode root) {
+        List<Integer> res = new ArrayList<>();
 
-        // Start DFS traversal from the root node
-        postorder(root);
+        // Base case
+        if (root == null) return res;
 
-        // Return the final postorder traversal
-        return answer;
-    }
+        // Traverse left subtree
+        res.addAll(postorderTraversal(root.left));
 
-    // Recursive DFS function for Postorder Traversal
-    private void postorder(TreeNode root) {
+        // Traverse right subtree
+        res.addAll(postorderTraversal(root.right));
 
-        // ---------------- Base Case ----------------
-        // If the current node is null,
-        // there is nothing to visit.
-        if (root == null) {
-            return;
-        }
+        // Visit root node at the end
+        res.add(root.val);
 
-        // ---------------- Step 1 ----------------
-        // Traverse the entire left subtree first.
-        postorder(root.left);
-
-        // ---------------- Step 2 ----------------
-        // Traverse the entire right subtree.
-        postorder(root.right);
-
-        // ---------------- Step 3 ----------------
-        // Visit (Process) the current node.
-        // Since this is POSTORDER,
-        // the current node is processed
-        // after both left and right subtrees.
-        answer.add(root.val);
+        return res;
     }
 }
