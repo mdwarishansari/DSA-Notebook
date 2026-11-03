@@ -14,38 +14,21 @@
  * }
  */
 class Solution {
-
-    // List to store the inorder traversal result
-    List<Integer> answer = new ArrayList<>();
-
     public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> res = new ArrayList<>();
 
-        // Start DFS traversal from the root
-        inorder(root);
+        // Base case
+        if (root == null) return res;
 
-        // Return the final traversal
-        return answer;
-    }
+        // Traverse left subtree
+        res.addAll(inorderTraversal(root.left));
 
-    // Recursive DFS function
-    private void inorder(TreeNode root) {
+        // Visit root node
+        res.add(root.val);
 
-        // Base Case:
-        // If current node is null, there is nothing to visit.
-        if (root == null) {
-            return;
-        }
+        // Traverse right subtree
+        res.addAll(inorderTraversal(root.right));
 
-        // Step 1:
-        // Visit the entire left subtree first.
-        inorder(root.left);
-
-        // Step 2:
-        // Process the current node.
-        answer.add(root.val);
-
-        // Step 3:
-        // Visit the entire right subtree.
-        inorder(root.right);
+        return res;
     }
 }
