@@ -1,56 +1,47 @@
-class Solution {
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
 
-    // Main function.
-    // If checkHeight() returns -1,
-    // the tree is not balanced.
-    // Otherwise it is balanced.
+class Solution {
     public boolean isBalanced(TreeNode root) {
-        return checkHeight(root) != -1;
+        // If height returns -1, the tree is unbalanced
+        return height(root) != -1;
     }
 
-    // Returns:
-    // Height of subtree -> if balanced
-    // -1                -> if subtree is unbalanced
-    private int checkHeight(TreeNode node) {
+    // Calculate height and check balance simultaneously
+    private int height(TreeNode root) {
 
-        // Base Case:
-        // Empty tree has height 0.
-        if (node == null) {
-            return 0;
-        }
+        // Base case: Empty node has height 0
+        if (root == null) return 0;
 
-        // Recursively calculate the height of the left subtree.
-        int left = checkHeight(node.left);
+        // Find height of left subtree
+        int l = height(root.left);
 
-        // If the left subtree is already unbalanced,
-        // immediately return -1.
-        // No need to check anything else.
-        if (left == -1) {
-            return -1;
-        }
+        // If left subtree is unbalanced, return -1
+        if (l == -1) return -1;
 
-        // Recursively calculate the height of the right subtree.
-        int right = checkHeight(node.right);
+        // Find height of right subtree
+        int r = height(root.right);
 
-        // If the right subtree is already unbalanced,
-        // immediately return -1.
-        if (right == -1) {
-            return -1;
-        }
+        // If right subtree is unbalanced, return -1
+        if (r == -1) return -1;
 
-        // If the current node itself becomes unbalanced,
-        // return -1 so that all ancestors also know
-        // the tree is not balanced.
-        if (Math.abs(left - right) > 1) {
-            return -1;
-        }
+        // Check difference between left and right heights
+        if (Math.abs(l - r) > 1) return -1;
 
-        // Current subtree is balanced.
-        // Return its height.
-        //
-        // Height =
-        // max(left subtree height, right subtree height) + 1
-        // (+1 is for the current node itself.)
-        return Math.max(left, right) + 1;
+        // Return height of current node
+        return 1 + Math.max(l, r);
     }
 }
