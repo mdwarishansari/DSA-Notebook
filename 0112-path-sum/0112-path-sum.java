@@ -4,13 +4,8 @@
  *     int val;
  *     TreeNode left;
  *     TreeNode right;
- *
  *     TreeNode() {}
- *
- *     TreeNode(int val) {
- *         this.val = val;
- *     }
- *
+ *     TreeNode(int val) { this.val = val; }
  *     TreeNode(int val, TreeNode left, TreeNode right) {
  *         this.val = val;
  *         this.left = left;
@@ -18,37 +13,24 @@
  *     }
  * }
  */
-
 class Solution {
-
-    // Returns true if there exists a root-to-leaf path
-    // whose sum equals targetSum.
     public boolean hasPathSum(TreeNode root, int targetSum) {
-
-        // Base Case 1:
-        // Empty tree cannot have any path.
+        // Base case: If the current node is null, there is no path
         if (root == null) {
             return false;
         }
 
-        // Subtract current node's value from the remaining target.
-        targetSum -= root.val;
+        // Subtract the current node's value from targetSum
+        int remainingSum = targetSum - root.val;
 
-        // Base Case 2:
-        // If current node is a leaf,
-        // check whether the remaining sum becomes 0.
+        // Check if the current node is a leaf (no left or right child)
         if (root.left == null && root.right == null) {
-            return targetSum == 0;
+            // If it's a leaf, check if the remaining sum has reached zero
+            return remainingSum == 0;
         }
 
-        // Recursively check the left subtree.
-        boolean leftPath = hasPathSum(root.left, targetSum);
-
-        // Recursively check the right subtree.
-        boolean rightPath = hasPathSum(root.right, targetSum);
-
-        // If either subtree contains a valid path,
-        // return true.
-        return leftPath || rightPath;
+        // Recursively check left and right subtrees with the updated remaining sum.
+        // If either subtree has a valid root-to-leaf path, return true.
+        return hasPathSum(root.left, remainingSum) || hasPathSum(root.right, remainingSum);
     }
 }
