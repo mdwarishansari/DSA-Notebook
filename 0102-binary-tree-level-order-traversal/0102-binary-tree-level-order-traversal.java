@@ -13,62 +13,58 @@
  *     }
  * }
  */
-class Solution {
 
+class Solution {
     public List<List<Integer>> levelOrder(TreeNode root) {
 
-        // Final answer which will store all levels
-        List<List<Integer>> answer = new ArrayList<>();
+        // Store the final level order traversal
+        List<List<Integer>> result = new ArrayList<>();
 
-        // Edge case:
-        // If tree is empty, simply return empty answer.
+        // If the tree is empty, return an empty list
         if (root == null) {
-            return answer;
+            return result;
         }
 
-        // Queue is used for Breadth First Search (Level Order Traversal)
+        // Queue is used for Breadth-First Search (BFS)
         Queue<TreeNode> queue = new LinkedList<>();
 
-        // Start BFS from the root node
+        // Add the root node to the queue
         queue.offer(root);
 
-        // Continue until all nodes are processed
+        // Process nodes level by level
         while (!queue.isEmpty()) {
 
-            // Number of nodes currently present in the queue.
-            // These nodes belong to exactly one level.
-            int levelSize = queue.size();
+            // Number of nodes present at the current level
+            int size = queue.size();
 
-            // Stores all node values of the current level
+            // Store values of the current level
             List<Integer> currentLevel = new ArrayList<>();
 
-            // Process every node of the current level
-            for (int i = 0; i < levelSize; i++) {
+            // Process all nodes of the current level
+            for (int i = 0; i < size; i++) {
 
                 // Remove the front node from the queue
-                TreeNode currentNode = queue.poll();
+                TreeNode current = queue.poll();
 
-                // Store its value
-                currentLevel.add(currentNode.val);
+                // Add its value to the current level
+                currentLevel.add(current.val);
 
-                // Add left child into the queue
-                // so it will be processed in the next level.
-                if (currentNode.left != null) {
-                    queue.offer(currentNode.left);
+                // Add left child if it exists
+                if (current.left != null) {
+                    queue.offer(current.left);
                 }
 
-                // Add right child into the queue
-                if (currentNode.right != null) {
-                    queue.offer(currentNode.right);
+                // Add right child if it exists
+                if (current.right != null) {
+                    queue.offer(current.right);
                 }
             }
 
-            // Current level is completely processed.
-            // Save it into the final answer.
-            answer.add(currentLevel);
+            // Add the completed level to the result
+            result.add(currentLevel);
         }
 
-        // Return all levels
-        return answer;
+        // Return the level order traversal
+        return result;
     }
 }
