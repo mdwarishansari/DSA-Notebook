@@ -1,5 +1,7 @@
+import java.util.*;
+
 /**
- * Definition for a binary tree node.
+ * Definition for a binary tree node[cite: 2].
  * public class TreeNode {
  *     int val;
  *     TreeNode left;
@@ -14,55 +16,40 @@
  * }
  */
 class Solution {
-
     public List<Integer> rightSideView(TreeNode root) {
-
-        // Stores the final right-side view of the tree.
-        List<Integer> answer = new ArrayList<>();
-
-        // Edge case:
-        // If the tree is empty, return an empty list.
+        List<Integer> result = new ArrayList<>();
+        
+        // Base case: empty tree returns an empty list
         if (root == null) {
-            return answer;
+            return result;
         }
-
-        // Queue is used for normal BFS (Level Order Traversal).
+        
+        // Queue to support level-order traversal (BFS)
         Queue<TreeNode> queue = new LinkedList<>();
-
-        // Start BFS from the root node.
         queue.offer(root);
-
-        // Continue until all nodes are processed.
+        
         while (!queue.isEmpty()) {
-
-            // Number of nodes in the current level.
             int levelSize = queue.size();
-
-            // Process every node of the current level.
+            
+            // Traverse all nodes at the current level
             for (int i = 0; i < levelSize; i++) {
-
-                // Remove the front node.
                 TreeNode currentNode = queue.poll();
-
-                // If this is the last node of the current level,
-                // then it is the rightmost node.
+                
+                // The last element of this level is visible from the right side
                 if (i == levelSize - 1) {
-                    answer.add(currentNode.val);
+                    result.add(currentNode.val);
                 }
-
-                // Add the left child for the next level.
+                
+                // Push children to the queue for the next level
                 if (currentNode.left != null) {
                     queue.offer(currentNode.left);
                 }
-
-                // Add the right child for the next level.
                 if (currentNode.right != null) {
                     queue.offer(currentNode.right);
                 }
             }
         }
-
-        // Return the right-side view.
-        return answer;
+        
+        return result;
     }
 }
