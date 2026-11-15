@@ -92,6 +92,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1314-matrix-block-sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1314-matrix-block-sum) |
 | [1381-design-a-stack-with-increment-operation](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1381-design-a-stack-with-increment-operation) |
 | [1482-minimum-number-of-days-to-make-m-bouquets](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1482-minimum-number-of-days-to-make-m-bouquets) |
+| [1524-number-of-sub-arrays-with-odd-sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1524-number-of-sub-arrays-with-odd-sum) |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1658-minimum-operations-to-reduce-x-to-zero) |
 | [1749-maximum-absolute-sum-of-any-subarray](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1749-maximum-absolute-sum-of-any-subarray) |
 | [1823-find-the-winner-of-the-circular-game](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1823-find-the-winner-of-the-circular-game) |
@@ -307,6 +308,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0918-maximum-sum-circular-subarray](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0918-maximum-sum-circular-subarray) |
 | [0940-distinct-subsequences-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0940-distinct-subsequences-ii) |
 | [1143-longest-common-subsequence](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1143-longest-common-subsequence) |
+| [1524-number-of-sub-arrays-with-odd-sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1524-number-of-sub-arrays-with-odd-sum) |
 | [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
 | [1749-maximum-absolute-sum-of-any-subarray](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1749-maximum-absolute-sum-of-any-subarray) |
 | [2472-maximum-number-of-non-overlapping-palindrome-substrings](https://github.com/mdwarishansari/DSA-Notebook/tree/master/2472-maximum-number-of-non-overlapping-palindrome-substrings) |
@@ -422,6 +424,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0724-find-pivot-index](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0724-find-pivot-index) |
 | [0974-subarray-sums-divisible-by-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0974-subarray-sums-divisible-by-k) |
 | [1314-matrix-block-sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1314-matrix-block-sum) |
+| [1524-number-of-sub-arrays-with-odd-sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1524-number-of-sub-arrays-with-odd-sum) |
 | [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1658-minimum-operations-to-reduce-x-to-zero) |
 | [3364-minimum-positive-sum-subarray](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3364-minimum-positive-sum-subarray) |
@@ -528,6 +531,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0523-continuous-subarray-sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0523-continuous-subarray-sum) |
 | [0973-k-closest-points-to-origin](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0973-k-closest-points-to-origin) |
 | [1401-circle-and-rectangle-overlapping](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1401-circle-and-rectangle-overlapping) |
+| [1524-number-of-sub-arrays-with-odd-sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1524-number-of-sub-arrays-with-odd-sum) |
 | [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1621-number-of-sets-of-k-non-overlapping-line-segments) |
 | [1823-find-the-winner-of-the-circular-game](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1823-find-the-winner-of-the-circular-game) |
 | [3524-find-x-value-of-array-i](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3524-find-x-value-of-array-i) |
