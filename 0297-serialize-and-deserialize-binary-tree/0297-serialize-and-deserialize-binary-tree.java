@@ -1,3 +1,7 @@
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Queue;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -8,84 +12,74 @@
  * }
  */
 public class Codec {
+    // Delimiter to separate node values in the serialized string
+    private static final String DELIMITER = ",";
+    // Marker to represent null child pointers
+    private static final String NULL_MARKER = "null";
 
-    // ---------------------------------------------------------
-    // SERIALIZE
-    // Convert Tree -> String
-    // ---------------------------------------------------------
+    // Encodes a tree to a single string using Preorder Traversal (Root -> Left -> Right).
     public String serialize(TreeNode root) {
-
-        // StringBuilder is used because repeatedly concatenating
-        // strings is expensive.
         StringBuilder sb = new StringBuilder();
-
         serializeHelper(root, sb);
-
         return sb.toString();
     }
 
-    // Preorder Traversal
-    // Root -> Left -> Right
+    /**
+     * Recursive helper method to build the serialized string via Preorder DFS.
+     *
+     * @param node The current TreeNode being processed.
+     * @param sb   StringBuilder accumulating the serialized output.
+     */
     private void serializeHelper(TreeNode node, StringBuilder sb) {
-
-        // If node is null, store "#"
-        // This is necessary to preserve the tree structure.
+        // Base case: If the current node is null, append the null marker and delimiter
         if (node == null) {
-            sb.append("#,");
+            sb.append(NULL_MARKER).append(DELIMITER);
             return;
         }
 
-        // Store current node value.
-        sb.append(node.val).append(",");
+        // 1. Append the current node's value followed by the delimiter
+        sb.append(node.val).append(DELIMITER);
 
-        // Serialize left subtree.
+        // 2. Recursively serialize the left subtree
         serializeHelper(node.left, sb);
 
-        // Serialize right subtree.
+        // 3. Recursively serialize the right subtree
         serializeHelper(node.right, sb);
     }
 
-    // ---------------------------------------------------------
-    // DESERIALIZE
-    // Convert String -> Tree
-    // ---------------------------------------------------------
+    // Decodes your encoded data to tree.
     public TreeNode deserialize(String data) {
-
-        // Split the serialized string using comma.
-        String[] values = data.split(",");
-
-        // Queue helps us process values one by one
-        // in the same order they were serialized.
-        Queue<String> queue = new LinkedList<>();
-
-        for (String value : values) {
-            queue.offer(value);
-        }
-
-        return deserializeHelper(queue);
+        // Split the serialized string by the delimiter and load tokens into a Queue
+        // for sequential O(1) consumption in Preorder fashion.
+        Queue<String> nodes = new LinkedList<>(Arrays.asList(data.split(DELIMITER)));
+        return deserializeHelper(nodes);
     }
 
-    // Builds the tree recursively.
-    private TreeNode deserializeHelper(Queue<String> queue) {
+    /**
+     * Recursive helper method to reconstruct the binary tree from the token queue.
+     *
+     * @param nodes Queue containing node values and null markers in Preorder sequence.
+     * @return      The reconstructed TreeNode.
+     */
+    private TreeNode deserializeHelper(Queue<String> nodes) {
+        // Poll the next token from the front of the queue
+        String val = nodes.poll();
 
-        // Read the next value.
-        String value = queue.poll();
-
-        // "#" means this node was null.
-        if (value.equals("#")) {
+        // Base case: If the token represents a null node, return null
+        if (val == null || val.equals(NULL_MARKER)) {
             return null;
         }
 
-        // Create current node.
-        TreeNode node = new TreeNode(Integer.parseInt(value));
+        // 1. Create the current root node with the parsed integer value
+        TreeNode root = new TreeNode(Integer.parseInt(val));
 
-        // Build left subtree.
-        node.left = deserializeHelper(queue);
+        // 2. Recursively reconstruct the left subtree
+        root.left = deserializeHelper(nodes);
 
-        // Build right subtree.
-        node.right = deserializeHelper(queue);
+        // 3. Recursively reconstruct the right subtree
+        root.right = deserializeHelper(nodes);
 
-        return node;
+        return root;
     }
 }
 
