@@ -4,13 +4,8 @@
  *     int val;
  *     TreeNode left;
  *     TreeNode right;
- *
  *     TreeNode() {}
- *
- *     TreeNode(int val) {
- *         this.val = val;
- *     }
- *
+ *     TreeNode(int val) { this.val = val; }
  *     TreeNode(int val, TreeNode left, TreeNode right) {
  *         this.val = val;
  *         this.left = left;
@@ -18,31 +13,23 @@
  *     }
  * }
  */
-
 class Solution {
-
     public TreeNode insertIntoBST(TreeNode root, int val) {
-
-        // Base Case:
-        // If we've reached a null position,
-        // this is exactly where the new node should be inserted.
+        // Base Case: Found the null spot where the new node belongs
         if (root == null) {
             return new TreeNode(val);
         }
-
-        // If the new value is smaller,
-        // insert it into the left subtree.
+        
+        // If val is smaller than current node, insert into the left subtree
         if (val < root.val) {
             root.left = insertIntoBST(root.left, val);
-        }
-        // Otherwise, insert it into the right subtree.
-        // (The problem guarantees val does not already exist.)
+        } 
+        // If val is greater than current node, insert into the right subtree
         else {
             root.right = insertIntoBST(root.right, val);
         }
-
-        // Return the current subtree root.
-        // This reconnects the updated subtree to its parent.
+        
+        // Return the unchanged root node pointer
         return root;
     }
 }
