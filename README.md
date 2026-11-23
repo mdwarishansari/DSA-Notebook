@@ -99,6 +99,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1749-maximum-absolute-sum-of-any-subarray](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1749-maximum-absolute-sum-of-any-subarray) |
 | [1823-find-the-winner-of-the-circular-game](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1823-find-the-winner-of-the-circular-game) |
 | [1870-minimum-speed-to-arrive-on-time](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1870-minimum-speed-to-arrive-on-time) |
+| [1932-merge-bsts-to-create-single-bst](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1932-merge-bsts-to-create-single-bst) |
 | [2073-time-needed-to-buy-tickets](https://github.com/mdwarishansari/DSA-Notebook/tree/master/2073-time-needed-to-buy-tickets) |
 | [2089-find-target-indices-after-sorting-array](https://github.com/mdwarishansari/DSA-Notebook/tree/master/2089-find-target-indices-after-sorting-array) |
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/2461-maximum-sum-of-distinct-subarrays-with-length-k) |
@@ -163,6 +164,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1096-brace-expansion-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1096-brace-expansion-ii) |
 | [1520-maximum-number-of-non-overlapping-substrings](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1520-maximum-number-of-non-overlapping-substrings) |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1658-minimum-operations-to-reduce-x-to-zero) |
+| [1932-merge-bsts-to-create-single-bst](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1932-merge-bsts-to-create-single-bst) |
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/2461-maximum-sum-of-distinct-subarrays-with-length-k) |
 | [2747-count-zero-request-servers](https://github.com/mdwarishansari/DSA-Notebook/tree/master/2747-count-zero-request-servers) |
 | [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/mdwarishansari/DSA-Notebook/tree/master/2897-apply-operations-on-array-to-maximize-sum-of-squares) |
@@ -701,6 +703,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0889-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0889-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
 | [0993-cousins-in-binary-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0993-cousins-in-binary-tree) |
+| [1932-merge-bsts-to-create-single-bst](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1932-merge-bsts-to-create-single-bst) |
 | [3841-palindromic-path-queries-in-a-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3841-palindromic-path-queries-in-a-tree) |
 ## Depth-First Search
 |  |
@@ -744,6 +747,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0863-all-nodes-distance-k-in-binary-tree) |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
 | [0993-cousins-in-binary-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0993-cousins-in-binary-tree) |
+| [1932-merge-bsts-to-create-single-bst](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1932-merge-bsts-to-create-single-bst) |
 | [3619-count-islands-with-total-value-divisible-by-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3619-count-islands-with-total-value-divisible-by-k) |
 | [3841-palindromic-path-queries-in-a-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3841-palindromic-path-queries-in-a-tree) |
 ## Binary Tree
@@ -787,6 +791,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0889-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0889-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
 | [0993-cousins-in-binary-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0993-cousins-in-binary-tree) |
+| [1932-merge-bsts-to-create-single-bst](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1932-merge-bsts-to-create-single-bst) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -848,6 +853,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0450-delete-node-in-a-bst](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0450-delete-node-in-a-bst) |
 | [0700-search-in-a-binary-search-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0700-search-in-a-binary-search-tree) |
 | [0701-insert-into-a-binary-search-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0701-insert-into-a-binary-search-tree) |
+| [1932-merge-bsts-to-create-single-bst](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1932-merge-bsts-to-create-single-bst) |
 ## Tournament Sort
 |  |
 | ------- |
