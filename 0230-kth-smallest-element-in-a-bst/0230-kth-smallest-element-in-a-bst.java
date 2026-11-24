@@ -4,13 +4,8 @@
  *     int val;
  *     TreeNode left;
  *     TreeNode right;
- *
  *     TreeNode() {}
- *
- *     TreeNode(int val) {
- *         this.val = val;
- *     }
- *
+ *     TreeNode(int val) { this.val = val; }
  *     TreeNode(int val, TreeNode left, TreeNode right) {
  *         this.val = val;
  *         this.left = left;
@@ -18,51 +13,36 @@
  *     }
  * }
  */
-
 class Solution {
-
-    // Counts how many nodes have been visited
-    // during inorder traversal.
+    // Counter to keep track of how many nodes we have visited in sorted order
     private int count = 0;
-
-    // Stores the kth smallest value.
-    private int answer = 0;
+    // Variable to store the k-th smallest value once found
+    private int result = -1;
 
     public int kthSmallest(TreeNode root, int k) {
-
-        // Perform inorder traversal.
-        inorder(root, k);
-
-        return answer;
+        // Perform an in-order traversal (Left -> Root -> Right),
+        // which visits BST nodes in ascending sorted order.
+        inOrderTraversal(root, k);
+        return result;
     }
 
-    // Inorder Traversal:
-    // Left -> Root -> Right
-    private void inorder(TreeNode node, int k) {
-
-        // Base Case:
-        // Empty subtree.
-        if (node == null) {
+    private void inOrderTraversal(TreeNode node, int k) {
+        // Base case: if node is null or we already found the k-th element, stop early
+        if (node == null || count >= k) {
             return;
         }
 
-        // Visit the left subtree first,
-        // because it contains smaller values.
-        inorder(node.left, k);
+        // 1. Traverse the left subtree first (smaller values)
+        inOrderTraversal(node.left, k);
 
-        // Current node is visited now.
+        // 2. Process the current node
         count++;
-
-        // If this is the kth visited node,
-        // store its value.
         if (count == k) {
-            answer = node.val;
-
-            // No need to continue searching.
-            return;
+            result = node.val;
+            return; // Stop further traversal once the answer is found
         }
 
-        // Visit the right subtree.
-        inorder(node.right, k);
+        // 3. Traverse the right subtree (larger values)
+        inOrderTraversal(node.right, k);
     }
 }
