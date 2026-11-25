@@ -1,75 +1,47 @@
 import java.util.*;
 
 class Solution {
-
     public int[][] updateMatrix(int[][] mat) {
-
-        int rows = mat.length;
-        int cols = mat[0].length;
-
+        int m = mat.length;
+        int n = mat[0].length;
+        
+        // Queue to store coordinates [row, col] for Multi-Source BFS
         Queue<int[]> queue = new LinkedList<>();
-
-        // Step 1:
-        // Put every 0 cell into the queue.
-        // These are our starting points for Multi-Source BFS.
-        for (int row = 0; row < rows; row++) {
-            for (int col = 0; col < cols; col++) {
-
-                if (mat[row][col] == 0) {
-                    queue.offer(new int[]{row, col});
-                } 
-                else {
-                    // Mark 1 cells as unvisited.
-                    // -1 means we haven't calculated their distance yet.
-                    mat[row][col] = -1;
+        
+        // 1. Initialize the matrix and enqueue all '0' cells as starting sources
+        for (int r = 0; r < m; r++) {
+            for (int c = 0; c < n; c++) {
+                if (mat[r][c] == 0) {
+                    queue.offer(new int[]{r, c});
+                } else {
+                    // Mark '1' cells as -1 (unvisited) so we don't confuse distance 1 with initial 1
+                    mat[r][c] = -1;
                 }
             }
         }
-
-        // Directions:
-        //        up
-        //         ↑
-        // left ← cell → right
-        //         ↓
-        //       down
-        int[][] directions = {
-            {-1, 0},  // up
-            {1, 0},   // down
-            {0, -1},  // left
-            {0, 1}    // right
-        };
-
-        // Step 2:
-        // BFS starting from all 0 cells.
+        
+        // 4-directional movement vectors: Up, Down, Left, Right
+        int[][] directions = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
+        
+        // 2. Perform BFS level by level
         while (!queue.isEmpty()) {
-
-            int[] current = queue.poll();
-
-            int row = current[0];
-            int col = current[1];
-
-            // Check all 4 neighboring cells.
-            for (int[] direction : directions) {
-
-                int newRow = row + direction[0];
-                int newCol = col + direction[1];
-
-                // Make sure the new position is inside the matrix
-                // and has not been visited yet.
-                if (newRow >= 0 && newRow < rows &&
-                    newCol >= 0 && newCol < cols &&
-                    mat[newRow][newCol] == -1) {
-
-                    // Distance of neighbor =
-                    // distance of current cell + 1
-                    mat[newRow][newCol] = mat[row][col] + 1;
-
-                    // Process this cell later.
-                    queue.offer(new int[]{newRow, newCol});
+            int[] curr = queue.poll();
+            int r = curr[0];
+            int c = curr[1];
+            
+            for (int[] dir : directions) {
+                int nr = r + dir[0];
+                int nc = c + dir[1];
+                
+                // Check bounds and ensure the neighbor is an unvisited cell (-1)
+                if (nr >= 0 && nr < m && nc >= 0 && nc < n && mat[nr][nc] == -1) {
+                    // Distance to nearest 0 is 1 + distance of current cell
+                    mat[nr][nc] = mat[r][c] + 1;
+                    queue.offer(new int[]{nr, nc});
                 }
             }
         }
-
+        
         return mat;
     }
 }
