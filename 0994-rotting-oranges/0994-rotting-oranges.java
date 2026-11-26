@@ -1,158 +1,62 @@
-import java.util.*;
+import java.util.LinkedList;
+import java.util.Queue;
 
 class Solution {
-
     public int orangesRotting(int[][] grid) {
-
-        // Number of rows in the grid
         int rows = grid.length;
-
-        // Number of columns in the grid
         int cols = grid[0].length;
-
-        // Queue stores the coordinates of rotten oranges.
-        //
-        // Each element is an int[] containing:
-        // {row, column}
+        
+        // Queue for Multi-Source Breadth-First Search (BFS) storing {row, col} coordinates
         Queue<int[]> queue = new LinkedList<>();
-
-        // Count the total number of fresh oranges.
         int freshCount = 0;
-
-        // ---------------------------------------------------------
-        // Step 1: Traverse the grid
-        //
-        // - Put every initially rotten orange into the queue.
-        // - Count every fresh orange.
-        // ---------------------------------------------------------
-        for (int row = 0; row < rows; row++) {
-
-            for (int col = 0; col < cols; col++) {
-
-                // If the orange is already rotten,
-                // add its coordinates to the queue.
-                if (grid[row][col] == 2) {
-
-                    queue.offer(new int[]{row, col});
-                }
-
-                // If the orange is fresh,
-                // increase the fresh orange count.
-                else if (grid[row][col] == 1) {
-
+        
+        // Step 1: Scan the entire grid to enqueue all initially rotten oranges (2)
+        // and count the total number of fresh oranges (1)
+        for (int r = 0; r < rows; r++) {
+            for (int c = 0; c < cols; c++) {
+                if (grid[r][c] == 2) {
+                    queue.offer(new int[]{r, c});
+                } else if (grid[r][c] == 1) {
                     freshCount++;
                 }
             }
         }
-
-        // If there are no fresh oranges,
-        // all oranges are already rotten.
-        // Therefore, the answer is 0 minutes.
+        
+        // Edge case: If there are no fresh oranges to begin with, 0 minutes are needed
         if (freshCount == 0) {
             return 0;
         }
-
-        // ---------------------------------------------------------
-        // Direction array
-        //
-        // We can move only in 4 directions:
-        //
-        // {-1,  0} -> UP
-        // { 1,  0} -> DOWN
-        // { 0, -1} -> LEFT
-        // { 0,  1} -> RIGHT
-        //
-        // Diagonal movement is NOT allowed.
-        // ---------------------------------------------------------
-        int[][] directions = {
-            {-1, 0},   // UP
-            {1, 0},    // DOWN
-            {0, -1},   // LEFT
-            {0, 1}     // RIGHT
-        };
-
-        // Number of BFS levels processed.
+        
         int minutes = 0;
-
-        // ---------------------------------------------------------
-        // Step 2: Multi-Source BFS
-        //
-        // Initially, the queue contains ALL rotten oranges.
-        // They all start spreading the rot simultaneously.
-        // ---------------------------------------------------------
-        while (!queue.isEmpty()) {
-
-            // Number of rotten oranges currently in this level.
-            //
-            // All these oranges belong to the same minute.
+        // 4-directional movement vectors: Up, Down, Left, Right
+        int[][] directions = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
+        
+        // Step 2: Process level-by-level (each level represents 1 elapsed minute)
+        while (!queue.isEmpty() && freshCount > 0) {
             int levelSize = queue.size();
-
-            // -----------------------------------------------------
-            // Process all rotten oranges of the current level.
-            // -----------------------------------------------------
-            while (levelSize-- > 0) {
-
-                // Remove the front rotten orange.
+            minutes++; // Increment time for the current wave of rotting
+            
+            for (int i = 0; i < levelSize; i++) {
                 int[] current = queue.poll();
-
-                int currentRow = current[0];
-                int currentCol = current[1];
-
-                // -------------------------------------------------
-                // Check all four directions.
-                // -------------------------------------------------
-                for (int[] direction : directions) {
-
-                    // Calculate the neighboring cell.
-                    int newRow = currentRow + direction[0];
-                    int newCol = currentCol + direction[1];
-
-                    // -------------------------------------------------
-                    // The neighbor can become rotten ONLY when:
-                    //
-                    // 1. It is inside the grid.
-                    // 2. It contains a fresh orange.
-                    // -------------------------------------------------
-                    if (newRow >= 0 &&
-                        newRow < rows &&
-                        newCol >= 0 &&
-                        newCol < cols &&
-                        grid[newRow][newCol] == 1) {
-
-                        // Make the fresh orange rotten.
-                        grid[newRow][newCol] = 2;
-
-                        // One fresh orange has become rotten.
-                        freshCount--;
-
-                        // Add the newly rotten orange to the queue.
-                        //
-                        // It will spread the rot in the NEXT
-                        // BFS level / next minute.
-                        queue.offer(new int[]{newRow, newCol});
+                int r = current[0];
+                int c = current[1];
+                
+                // Spread rot to all valid 4-directionally adjacent fresh oranges
+                for (int[] dir : directions) {
+                    int nextR = r + dir[0];
+                    int nextC = c + dir[1];
+                    
+                    // Check grid boundaries and whether the adjacent cell has a fresh orange
+                    if (nextR >= 0 && nextR < rows && nextC >= 0 && nextC < cols && grid[nextR][nextC] == 1) {
+                        grid[nextR][nextC] = 2; // Mark orange as rotten
+                        freshCount--;           // Decrement remaining fresh oranges
+                        queue.offer(new int[]{nextR, nextC}); // Enqueue newly rotten orange for the next minute
                     }
                 }
             }
-
-            // One complete BFS level has been processed.
-            // Therefore, one minute has passed.
-            minutes++;
         }
-
-        // ---------------------------------------------------------
-        // Step 3: Final result
-        //
-        // If freshCount == 0:
-        //     Every fresh orange was successfully rotten.
-        //
-        //     We return minutes - 1 because the final BFS
-        //     iteration only processed oranges that were already
-        //     rotten and did not rot anything new.
-        //
-        // If freshCount > 0:
-        //     Some fresh oranges could not be reached.
-        //     Therefore, return -1.
-        // ---------------------------------------------------------
-        return freshCount == 0 ? minutes - 1 : -1;
+        
+        // Step 3: If all fresh oranges rotted, return elapsed minutes; otherwise return -1
+        return freshCount == 0 ? minutes : -1;
     }
 }
