@@ -138,6 +138,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0076-minimum-window-substring](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0076-minimum-window-substring) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
+| [0127-word-ladder](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0127-word-ladder) |
 | [0138-copy-list-with-random-pointer](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0138-copy-list-with-random-pointer) |
 | [0139-word-break](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0139-word-break) |
 | [0141-linked-list-cycle](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0141-linked-list-cycle) |
@@ -480,6 +481,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0091-decode-ways](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0091-decode-ways) |
 | [0115-distinct-subsequences](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0115-distinct-subsequences) |
 | [0125-valid-palindrome](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0125-valid-palindrome) |
+| [0127-word-ladder](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0127-word-ladder) |
 | [0139-word-break](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0139-word-break) |
 | [0208-implement-trie-prefix-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0208-implement-trie-prefix-tree) |
 | [0227-basic-calculator-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0227-basic-calculator-ii) |
@@ -811,6 +813,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0104-maximum-depth-of-binary-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0111-minimum-depth-of-binary-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0111-minimum-depth-of-binary-tree) |
 | [0112-path-sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0112-path-sum) |
+| [0127-word-ladder](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0127-word-ladder) |
 | [0130-surrounded-regions](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0130-surrounded-regions) |
 | [0199-binary-tree-right-side-view](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0199-binary-tree-right-side-view) |
 | [0200-number-of-islands](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0200-number-of-islands) |
@@ -1071,4 +1074,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0173-binary-search-tree-iterator](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0173-binary-search-tree-iterator) |
+## Bidirectional Search
+|  |
+| ------- |
+| [0127-word-ladder](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0127-word-ladder) |
 <!---LeetCode Topics End-->
