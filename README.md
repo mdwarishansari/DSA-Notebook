@@ -315,6 +315,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0516-longest-palindromic-subsequence](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0516-longest-palindromic-subsequence) |
 | [0542-01-matrix](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0542-01-matrix) |
 | [0647-palindromic-substrings](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0647-palindromic-substrings) |
+| [0847-shortest-path-visiting-all-nodes](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0847-shortest-path-visiting-all-nodes) |
 | [0918-maximum-sum-circular-subarray](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0918-maximum-sum-circular-subarray) |
 | [0940-distinct-subsequences-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0940-distinct-subsequences-ii) |
 | [1143-longest-common-subsequence](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1143-longest-common-subsequence) |
@@ -664,6 +665,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0231-power-of-two](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0231-power-of-two) |
 | [0260-single-number-iii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0260-single-number-iii) |
 | [0421-maximum-xor-of-two-numbers-in-an-array](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0421-maximum-xor-of-two-numbers-in-an-array) |
+| [0847-shortest-path-visiting-all-nodes](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0847-shortest-path-visiting-all-nodes) |
 | [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/mdwarishansari/DSA-Notebook/tree/master/2897-apply-operations-on-array-to-maximize-sum-of-squares) |
 | [3568-minimum-moves-to-clean-the-classroom](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3568-minimum-moves-to-clean-the-classroom) |
 | [3644-maximum-k-to-sort-a-permutation](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3644-maximum-k-to-sort-a-permutation) |
@@ -832,6 +834,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0733-flood-fill](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0733-flood-fill) |
 | [0743-network-delay-time](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0743-network-delay-time) |
 | [0785-is-graph-bipartite](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0785-is-graph-bipartite) |
+| [0847-shortest-path-visiting-all-nodes](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0847-shortest-path-visiting-all-nodes) |
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0863-all-nodes-distance-k-in-binary-tree) |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
 | [0993-cousins-in-binary-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0993-cousins-in-binary-tree) |
@@ -919,6 +922,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0684-redundant-connection](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0684-redundant-connection) |
 | [0743-network-delay-time](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0743-network-delay-time) |
 | [0785-is-graph-bipartite](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0785-is-graph-bipartite) |
+| [0847-shortest-path-visiting-all-nodes](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0847-shortest-path-visiting-all-nodes) |
 | [3970-shortest-path-with-at-most-k-consecutive-identical-characters](https://github.com/mdwarishansari/DSA-Notebook/tree/master/3970-shortest-path-with-at-most-k-consecutive-identical-characters) |
 ## Graph Coloring
 |  |
@@ -1078,4 +1082,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0127-word-ladder](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0127-word-ladder) |
+## Bitmask
+|  |
+| ------- |
+| [0847-shortest-path-visiting-all-nodes](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0847-shortest-path-visiting-all-nodes) |
 <!---LeetCode Topics End-->
