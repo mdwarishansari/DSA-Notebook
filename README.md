@@ -83,6 +83,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0875-koko-eating-bananas](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0875-koko-eating-bananas) |
 | [0889-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0889-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [0904-fruit-into-baskets](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0904-fruit-into-baskets) |
+| [0909-snakes-and-ladders](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0909-snakes-and-ladders) |
 | [0918-maximum-sum-circular-subarray](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0918-maximum-sum-circular-subarray) |
 | [0973-k-closest-points-to-origin](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0973-k-closest-points-to-origin) |
 | [0974-subarray-sums-divisible-by-k](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0974-subarray-sums-divisible-by-k) |
@@ -836,6 +837,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0785-is-graph-bipartite](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0785-is-graph-bipartite) |
 | [0847-shortest-path-visiting-all-nodes](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0847-shortest-path-visiting-all-nodes) |
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0863-all-nodes-distance-k-in-binary-tree) |
+| [0909-snakes-and-ladders](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0909-snakes-and-ladders) |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
 | [0993-cousins-in-binary-tree](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0993-cousins-in-binary-tree) |
 | [0994-rotting-oranges](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0994-rotting-oranges) |
@@ -896,6 +898,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0240-search-a-2d-matrix-ii](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0240-search-a-2d-matrix-ii) |
 | [0542-01-matrix](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0542-01-matrix) |
 | [0733-flood-fill](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0733-flood-fill) |
+| [0909-snakes-and-ladders](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0909-snakes-and-ladders) |
 | [0994-rotting-oranges](https://github.com/mdwarishansari/DSA-Notebook/tree/master/0994-rotting-oranges) |
 | [1091-shortest-path-in-binary-matrix](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1091-shortest-path-in-binary-matrix) |
 | [1314-matrix-block-sum](https://github.com/mdwarishansari/DSA-Notebook/tree/master/1314-matrix-block-sum) |
